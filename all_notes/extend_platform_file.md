@@ -6,3 +6,6 @@
 	- use camel case or the name
 	- "<file_name>.js?original"
 - `module.exports = <name>.extend ({ ... });`
+
+
+[Table of Contents](../README.md)
