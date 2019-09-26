@@ -7,6 +7,7 @@
 - In current platform directory:
 	- Run `yarn unlink`
 	- Run `make docker-down`
+	- Run `docker ps` to ensure that containers are no longer running.
 
 ### Use next node version
 - In next platform directory:

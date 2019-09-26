@@ -8,6 +8,7 @@
 - Run `git tag | grep <version_number>` (example: 4.0) and find the last patch version for the next step.
 - Run `git checkout <version_number>` (example: v4.0.8).
 - Run `git branch` to ensure correct branch.
+- Run `git submodule update --init --recursive`
 - Run `yarn --update-checksums` to install all dependencies.
 
 ***

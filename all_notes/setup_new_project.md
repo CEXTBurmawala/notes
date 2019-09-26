@@ -6,7 +6,7 @@
 
 ### Setup project directory on local machine
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
-	- See [this](./setup_new_platform_locally.md) page for instruction on getting the correct platform version setup.
+	- See **[this](./setup_new_platform_locally.md)** page for instruction on getting the correct platform version setup.
 - Create a directory for the customer in `~/git/config_<name>_v5` directory with the same name as the git repo.
 - Find repo on the i-sight github page `github.com/i-Sight/config_<name>_v5` and clone the 'develop' branch into the project directory.
 - Create a new branch before starting to work on the project.
@@ -30,7 +30,7 @@
 	- Navigate to the project directory `~/git/config_<name>_v5`
 	- Run `make breakdown && make setup && make create-sample-users`
 	- Run `node server.js`
-- Navigate to <http://localhost:8000> in browser.
+- Navigate to <http://localhost:8000> in the browser.
 
 
 ***
