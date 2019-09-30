@@ -1,13 +1,13 @@
 ## Change Project
 
 ### Shut down existing project
-- In current project directory:
-	- Shut down running server/webpack
-	- Run `yarn unlink`
 - In current platform directory:
 	- Run `yarn unlink`
 	- Run `make docker-down`
 	- Run `docker ps` to ensure that containers are no longer running.
+- In current project directory:
+	- Shut down running server/webpack
+	- Run `yarn unlink isight`
 
 ### Use next node version
 - In next platform directory:

@@ -10,4 +10,7 @@ This repository is intended to be a notebook for work-related notes.
 
 ## Programming in the App
 - [Extend platform file](./all_notes/extend_platform_file.md)
-- [Adding Sub Section](./all_notes/adding_sub_section.md)
+- [Adding sub section](./all_notes/adding_sub_section.md)
+
+## Programming in the App
+- [Database dump and restore](./all_notes/db_dump_restore.md)
