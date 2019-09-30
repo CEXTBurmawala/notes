@@ -35,5 +35,8 @@ The `-t <name>` gives the image a friendly name.
 #### See images on local host:
 `docker images`
 
+#### View dockerfile:
+`cat Dockerfile`
+
 ***
 [Table of Contents](../README.md)

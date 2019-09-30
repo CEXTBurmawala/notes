@@ -12,9 +12,10 @@ This repository is intended to be a notebook for work-related notes.
 - [Extend platform file](./all_notes/extend_platform_file.md)
 - [Adding sub section](./all_notes/adding_sub_section.md)
 
-## Docker/depoying
+## Docker/deploying
 - [Docker general](./all_notes/docker_general.md)
 - [Dockerize Node.js](./all_notes/dockerize_nodejs.md)
+- [Linking containers](./all_notes/network_containers.md)
 
 ## Database
 - [Database dump and restore](./all_notes/db_dump_restore.md)

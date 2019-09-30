@@ -14,7 +14,7 @@
 Once the dockerfile is created, the image needs to be built and then a container can be launched.
 
 - To build the image, run `docker build -t <name> .`
-- To launch the container, run `docker run -d --name <container_name> -p <port>:<port> <container_name>`
+- To launch the container, run `docker run -d --name <container_name> -p <port>:<port> <image_name>`
 
 ### Sample dockerfile:
 ```
@@ -30,6 +30,10 @@ EXPOSE 3000
 
 CMD [ "npm", "start" ]
 ```
+
+### Ignore files/directories
+
+Files and directories can be ignored from the build using a `.dockerignore` file which lists the files/directories to be ignored. The file `.git` and `node_modules` should be added to the `.dockerignore` file.
 
 ***
 [Table of Contents](../README.md)
