@@ -16,6 +16,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Docker general](./docker_deploy/docker_general.md)
 - [Dockerize Node.js](./docker_deploy/dockerize_nodejs.md)
 - [Linking containers](./docker_deploy/network_containers.md)
+- [Docker compose](./docker_deploy/docker_compose.md)
 
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
