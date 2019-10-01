@@ -12,7 +12,5 @@ pg_dump: Dump data from the database
 -t: flag for table name
 
 
-
-
 ***
 [Table of Contents](../README.md)
