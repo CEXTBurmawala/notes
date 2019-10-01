@@ -3,19 +3,19 @@
 This repository is intended to be a notebook for work-related notes.
 
 ## Project Setup
-- [Setup new project](./all_notes/setup_new_project.md)
-- [Setup new platform locally](./all_notes/setup_new_platform_locally.md)
-- [Change project](./all_notes/change_project.md)
-- [Working with GitHub](./all_notes/working_with_github.md)
+- [Setup new project](./project_setup/setup_new_project.md)
+- [Setup new platform locally](./project_setup/setup_new_platform_locally.md)
+- [Change project](./project_setup/change_project.md)
+- [Working with GitHub](./project_setup/working_with_github.md)
 
 ## Programming in the App
-- [Extend platform file](./all_notes/extend_platform_file.md)
-- [Adding sub section](./all_notes/adding_sub_section.md)
+- [Extend platform file](./programing_app/extend_platform_file.md)
+- [Adding sub section](./programing_app/adding_sub_section.md)
 
 ## Docker/deploying
-- [Docker general](./all_notes/docker_general.md)
-- [Dockerize Node.js](./all_notes/dockerize_nodejs.md)
-- [Linking containers](./all_notes/network_containers.md)
+- [Docker general](./docker_deploy/docker_general.md)
+- [Dockerize Node.js](./docker_deploy/dockerize_nodejs.md)
+- [Linking containers](./docker_deploy/network_containers.md)
 
 ## Database
-- [Database dump and restore](./all_notes/db_dump_restore.md)
+- [Database dump and restore](./database/db_dump_restore.md)
