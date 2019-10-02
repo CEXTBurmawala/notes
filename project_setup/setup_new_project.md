@@ -6,7 +6,7 @@
 
 ### Setup new repo (if required)
 - Ask Marvin to create repo on i-Sight github account <https://github.com/i-Sight> with the name provided from the ticket in Jira. Ask Rachel for the customer name to be used.
-- give Rachel the repo name (`should be config_<name>_v5`) and the Docker name (`/<name>`).
+- give Rachel the repo name (should be `config_<name>_v5`) and the Docker name (`/<name>`).
 
 ### Setup project directory on local machine (if new project)
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
@@ -67,7 +67,7 @@
 	- Run `make watch`
 - In another terminal window:
 	- Navigate to the project directory `~/git/config_<name>_v5`
-	- Run `make breakdown && make setup && make create-sample-users`
+	- Run a dev setup `make breakdown && make setup && make create-sample-users`
 	- Run `node server.js`
 - Navigate to <http://localhost:8000> in the browser.
 
