@@ -7,6 +7,7 @@
 	- Run `docker ps` to ensure that containers are no longer running.
 - In current project directory:
 	- Shut down running server/webpack
+	- Run `yarn unlink`
 
 ### Use next node version
 - In next platform directory:
@@ -26,6 +27,9 @@
 	- Run `node server.js`
 	- Run `make watch`
 - Navigate to <http://localhost:8000> in browser.
+
+### Potential issue
+- If dev setup fails because it references another project, check the config path by running `echo $APP_CONFIG_PATH` and if it's not empty, run `unset APP_CONFIG_PATH`
 
 ***
 [Table of Contents](../README.md)

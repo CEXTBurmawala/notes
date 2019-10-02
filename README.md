@@ -7,6 +7,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Setup new platform locally](./project_setup/setup_new_platform_locally.md)
 - [Change project](./project_setup/change_project.md)
 - [Working with GitHub](./project_setup/working_with_github.md)
+- [Update versions](./project_setup/update_versions.md)
 
 ## Programming in the App
 - [Extend platform file](./programing_app/extend_platform_file.md)

@@ -40,8 +40,8 @@
 	- Run `yarn link`
 	- Run `make docker-up`
 - In project directory:
-	- Run `yarn`
 	- Run `yarn link isight`
+	- Run `yarn`
 
 ### Setup project directory on local machine (if existing project)
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
@@ -58,8 +58,8 @@
 	- Run `yarn link`
 	- Run `make docker-up`
 - In project directory:
-	- Run `yarn`
 	- Run `yarn link isight`
+	- Run `yarn`
 
 ### Start up project
 - In one terminal window:
@@ -67,6 +67,7 @@
 	- Run `make watch`
 - In another terminal window:
 	- Navigate to the project directory `~/git/config_<name>_v5`
+
 	- Run a dev setup `make breakdown && make setup && make create-sample-users`
 	- Run `node server.js`
 - Navigate to <http://localhost:8000> in the browser.
