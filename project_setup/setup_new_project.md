@@ -26,7 +26,7 @@
 	- `git push -u origin develop` to push the work to github.
 	the default branch will now be 'develop'.
 - Create the master branch and push it to github as well.
-- Delete vx.x.x branch.
+- Delete <v5.x.x> branch.
 - Checkout the develop branch and create a new working branch called 'PROBUILD-###'.
 - There should now be 3 branches:
 	- PROBUILD-###
@@ -60,8 +60,9 @@
 	- Run `yarn link`
 	- Run `make docker-up`
 - In project directory:
-	- Run `yarn link isight`
 	- Run `yarn`
+	- Run `yarn link isight`
+	- Run a dev setup (if required) `make breakdown && make setup && make create-sample-users`
 
 ### Start up project
 - In one terminal window:
@@ -69,7 +70,6 @@
 	- Run `make watch`
 - In another terminal window:
 	- Navigate to the project directory `~/git/config_<name>_v5`
-	- Run a dev setup (if required) `make breakdown && make setup && make create-sample-users`
 	- Run `node server.js`
 - Navigate to <http://localhost:8000> in the browser.
 
