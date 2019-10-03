@@ -30,6 +30,7 @@
 
 ### Potential issue
 - If dev setup fails because it references another project, check the config path by running `echo $APP_CONFIG_PATH` and if it's not empty, run `unset APP_CONFIG_PATH`
+- If dev setup fails because of 'schedule-purge.js', check Docker containers that Quartz is running.
 
 ***
 [Table of Contents](../README.md)

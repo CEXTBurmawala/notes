@@ -41,7 +41,7 @@
 	- Run `make docker-up`
 - In project directory:
 	- Run `yarn link isight`
-	- Run `yarn`
+	- Run `make install`
 
 ### Setup project directory on local machine (if existing project)
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
@@ -67,10 +67,13 @@
 	- Run `make watch`
 - In another terminal window:
 	- Navigate to the project directory `~/git/config_<name>_v5`
-
-	- Run a dev setup `make breakdown && make setup && make create-sample-users`
+	- Run a dev setup (if required) `make breakdown && make setup && make create-sample-users`
 	- Run `node server.js`
 - Navigate to <http://localhost:8000> in the browser.
+
+### Potential issue
+- If dev setup fails because it references another project, check the config path by running `echo $APP_CONFIG_PATH` and if it's not empty, run `unset APP_CONFIG_PATH`
+- If dev setup fails because of 'schedule-purge.js', check Docker containers that Quartz is running.
 
 
 ***
