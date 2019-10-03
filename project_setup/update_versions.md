@@ -6,7 +6,7 @@ The Platform and Probase should have the latest patch versions and they should m
 - Run `git branch` which will provide the platform version being used.
 - Alternatively, the 'package.json' file will list the version.
 - Run `git fetch` which will fetch the changes
-- Run `git tag | grep v0.0` to list all branches and find the latest one.
+- Run `git tag | grep v0.0` to list all branches and find the latest one. Alternatively, go to <https://github.com/i-Sight/isight_main_v5_beta> and search tags for the latest version.
 - Run `git checkout <v0.0.0>`
 - Run `git submodule update --init --recursive`
 - Run `yarn`

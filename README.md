@@ -14,6 +14,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Adding sub section](./programing_app/adding_sub_section.md)
 
 ## Docker/deploying
+- [Deploy to UAT](./docker_deploy/deploy_to_UAT.md)
 - [Docker general](./docker_deploy/docker_general.md)
 - [Dockerize Node.js](./docker_deploy/dockerize_nodejs.md)
 - [Linking containers](./docker_deploy/network_containers.md)
