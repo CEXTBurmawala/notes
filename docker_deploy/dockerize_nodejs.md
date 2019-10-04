@@ -9,7 +9,7 @@
 5. Run `npm install` to install the dependencies
 6. Copy all the source code into the working directory
 7. Specify the port that the app will run on
-8. Secify the command to start/run the app
+8. Specify the command to start/run the app
 
 Once the dockerfile is created, the image needs to be built and then a container can be launched.
 

@@ -1,4 +1,4 @@
-## Update verisons
+## Update versions
 
 The Platform and Probase should have the latest patch versions and they should match. Ensure that the platform is on the latest patch and then double check that the Probase is also on the latest
 

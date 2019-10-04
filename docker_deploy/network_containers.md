@@ -1,7 +1,7 @@
-## Netowrk Containers
+## Network Containers
 
 ### Create a network:
-`docker network create <netowrk_name>`
+`docker network create <network_name>`
 
 ### Connect container to a network:
 `docker run -d --name=<name> --network=<network_name> <docker_image>`

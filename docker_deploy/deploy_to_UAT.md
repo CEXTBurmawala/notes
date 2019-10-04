@@ -1,5 +1,8 @@
-## Deploy to UAT
+## Deploy to UAT 
 
+### Azure procedure
+
+### AWS procedure
 
 
 ***

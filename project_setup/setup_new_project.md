@@ -22,7 +22,7 @@
 - The changes can now be pushed to the github repository:
 	- `git checkout -b develop` to create the develop branch,
 	- `git add .` to add all changes,
-	- `git commit -m "Initial commit"` to make the inital commit,
+	- `git commit -m "Initial commit"` to make the initial commit,
 	- `git push -u origin develop` to push the work to github.
 	the default branch will now be 'develop'.
 - Create the master branch and push it to github as well.

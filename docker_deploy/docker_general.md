@@ -1,6 +1,6 @@
 ## Docker General
 
-Each container is sandboxed. If a service needs to be accessible by a process not running in a container, then the port needs to be exposed via the Host. Once exposed, it is possible to access the process as if it were running on the host OS itself.
+Each container is sand-boxed. If a service needs to be accessible by a process not running in a container, then the port needs to be exposed via the Host. Once exposed, it is possible to access the process as if it were running on the host OS itself.
 
 By default, the host is mapped to port 0.0.0.0, which means all IP addresses. You can specify a particular IP address when you define the port mapping. for example: 127.0.0.1:6379:6379
 
@@ -17,7 +17,7 @@ This also shows the image used for each container, the friendly name, ID and the
 `docker ps -a`
 
 #### See more details about a running container:
-`docker inspect <friendly_name|containe_id>`
+`docker inspect <friendly_name|container_id>`
 
 #### Search for docker image:
 `docker search <name>`
@@ -25,7 +25,7 @@ This also shows the image used for each container, the friendly name, ID and the
 #### Launch a container:
 `docker run <flag> <name>:<version_number>`
 
-By default, Docker will run containers in the foreground. Adding '-d' flag will run the container in the background (detatched). Docker will run the latest version of the image, in order to specify the versio number required, add a colon and the version number required.
+By default, Docker will run containers in the foreground. Adding '-d' flag will run the container in the background (detached). Docker will run the latest version of the image, in order to specify the version number required, add a colon and the version number required.
 
 #### Save data to Docker host:
 `docker run -d --name <name> -v <directory_path>:/data/<container>`
