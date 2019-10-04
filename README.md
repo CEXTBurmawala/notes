@@ -8,6 +8,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Change project](./project_setup/change_project.md)
 - [Working with GitHub](./project_setup/working_with_github.md)
 - [Update versions](./project_setup/update_versions.md)
+- [Product generator](./project_setup/product-generator.md)
 
 ## Programming in the App
 - [Extend platform file](./programing_app/extend_platform_file.md)
