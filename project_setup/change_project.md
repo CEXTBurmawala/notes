@@ -7,7 +7,6 @@
 	- Run `docker ps` to ensure that containers are no longer running.
 - In current project directory:
 	- Shut down running server/webpack
-	- Run `yarn unlink`
 
 ### Use next node version
 - In next platform directory:
