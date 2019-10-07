@@ -4,8 +4,9 @@
 - Create a new branch when starting a project.
 - Once features are implemented, push branch to GitHub and make a pull request.
 - Paste link to pull request in 'pr-review' slack channel.
-- Branch will be merged into 'develop' branch.
+- Branch will be merged into 'develop' branch and feature branch can be deleted.
 - On local machine, checkout the 'develop' branch and run `git pull	origin develop`
+- Delete local feature branch.
 
 ### Editing Pull Requests
 If changes are required in a pull request, here are the following steps to follow:
