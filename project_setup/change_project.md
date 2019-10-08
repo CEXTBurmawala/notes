@@ -22,7 +22,7 @@
 - In next project directory:
 	- Run `yarn`
 	- Run `yarn link isight`
-	- Run `make breakdown && make setup && make create-sample-users`
+	- Dev setup, Run `make breakdown && make setup && make create-sample-users`
 	- Run `node server.js`
 	- Run `make watch`
 - Navigate to <http://localhost:8000> in browser.
