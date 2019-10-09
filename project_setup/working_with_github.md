@@ -15,6 +15,7 @@ If others make changes, follow the same steps but you need to pull the recent co
 
 ### Merging to master branch
 - Once all work is completed, the 'develop' branch can be merged into the 'master' branch for deploying to UAT or prod (production).
+- Create pull request and merge 'develop' into 'master'.
 
 
 ***

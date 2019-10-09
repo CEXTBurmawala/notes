@@ -41,9 +41,8 @@
 	- Run `yarn link`
 	- Run `make docker-up`
 - In project directory:
-	- Run `yarn`
+	- Run `make install` (which will perform the following actions: `yarn`, `make build`, `make breakdown`, `make setup` and `make create-sample-users`)
 	- Run `yarn link isight`
-	- Run `make install` (which will perform the following actions: `yarn`, `make build`, `make breakdown`, `setup` and `make create-sample-users`)
 
 ### Setup project directory on local machine (if existing project)
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
