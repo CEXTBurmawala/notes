@@ -36,6 +36,22 @@ make create-sample-users
 make users-import
 ```
 
+### Re-deployment
+Somethings are different if redeploying to UAT.
+- Log into Jenkins
+- navigate to Team Pro > non-Prod (UAT)
+- Choose the project to be deployed and click on the 'Name'
+- Click on on project
+- Click 'Rebuild Last' on left navigation bar
+- Change fields that you want to change (i.e. GIT_TAG)
+- Click 'Rebuild' once all information is inputted.
+- Click on project name in the path banner
+- Click on `<project_name>-uat-deploy-<version>` tab to see deploy progress.
+- Once deploy is complete, navigate to the UAT URL and test the app.
+- In Jira, mark the ticket 'Ready for QA'
+
+
+
 ### Notes on releases
 - In github repo, click on 'releases'
 
