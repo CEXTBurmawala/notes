@@ -17,5 +17,8 @@ If others make changes, follow the same steps but you need to pull the recent co
 - Once all work is completed, the 'develop' branch can be merged into the 'master' branch for deploying to UAT or prod (production).
 - Create pull request and merge 'develop' into 'master' and merge remote master into local master in the project directory (no approval needed)
 
+### Notes
+- ensure to be linked to platform to push to remote otherwise there will be an error with missing the 'isight' folder in node_modules.
+
 ***
 [Table of Contents](../README.md)
