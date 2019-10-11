@@ -41,6 +41,8 @@ Somethings are different if redeploying to UAT.
 
 ### Round 1 - POSTRUN_SCRIPT
 ```
+export NODE_ENV=development
+make breakdown
 make setup
 make create-sample-users
 ```
