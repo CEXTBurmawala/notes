@@ -13,6 +13,7 @@ This repository is intended to be a notebook for work-related notes.
 ## Programming in the App
 - [Extend platform file](./programing_app/extend_platform_file.md)
 - [Adding sub section](./programing_app/adding_sub_section.md)
+- [Suggested Links](./programing_app/suggested_links.md)
 
 ## Docker/deploying
 - [Deploy to UAT - Jenkins](./docker_deploy/deploy_to_UAT_jenkins.md)
