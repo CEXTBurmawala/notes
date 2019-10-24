@@ -26,3 +26,6 @@ This repository is intended to be a notebook for work-related notes.
 
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
+
+## Vim
+- [SpaceVim Setup](./database/spacevim_setup.md)
