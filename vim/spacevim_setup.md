@@ -39,9 +39,14 @@ name = "git"
 relativenumber = false
 ```
 
+- Change default indentation:
+```
+[options]
+default_indent = 4
+```
+
 #### Add bash alias to SpaceVim config file
 Add `alias vimconfig='vim ~/.SpaceVim.d/init.toml'` to bash_profile aliases
-
 
 
 #### Screenshots
