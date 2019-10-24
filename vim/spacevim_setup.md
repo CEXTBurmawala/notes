@@ -11,7 +11,7 @@
 
 #### Install SpaceVim (https://spacevim.org/quick-start-guide/)
 - To install, run `curl -sLf https://spacevim.org/install.sh | bash`
-- for SpaceVim to install plugins, run `vim` 
+** When vim is launched for the first time, SpaceVim will install plugins.
 
 #### Edit config file (https://spacevim.org/documentation/)
 To configure SpaceVim, add/edit the file `~/.SpaceVim.d/init.toml`
