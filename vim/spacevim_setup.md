@@ -28,6 +28,22 @@ name = "colorsheme"
 ```
 See (https://spacevim.org/layers/colorscheme/) for color scheme options.
 
+- To add git to SpaceVim, add:
+```
+[[layers]]
+name = "git"
+```
+- Show absolute line numbers instead of relative
+```
+[options]
+relativenumber = false
+```
+
+#### Add bash alias to SpaceVim config file
+Add `alias vimconfig='vim ~/.SpaceVim.d/init.toml'` to bash_profile aliases
+
+
+
 #### Screenshots
 <img src="./spacevim_welcome.jpeg" width="800">
 <img src="./vim_init.jpeg" width="800">
