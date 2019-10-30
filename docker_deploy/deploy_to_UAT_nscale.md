@@ -20,11 +20,12 @@
 - Run `make compile`
 - See below about changing environment variables
 - Check slack channel to make sure no one else is building and to inform other that you're building
-- Run `tmux ls`
-- Run `tmux new -s <project_name>` to start a new session
+- Run `tmux ls` [OPTIONAL]
+- Run `tmux new -s <project_name>` to start a new session [OPTIONAL]
 - In the tmux session, run `make build` to build the containers/app
 - When it's done building, run `make preview` to see if it looks good
 - Then, run `make deploy`
+- Run `make check` to ensure that no deviation between containers on service box
 - Exit tmux `exit`
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
@@ -36,7 +37,7 @@
 ### Re-deployment [AWS]
 - To log into bastion1, run `ssh -i key_name cex_user_name@ec2-34-214-84-10.us-west-2.compute.amazonaws.com`
 	- A bash alias called `aws` runs the above command with the username
-- To log into nscale, run `ssh cexnscaleadmin@ip-172-31-38-173.us-west-2.compute.internal`
+- To log into 'Nscale', run `ssh cexnscaleadmin@ip-172-31-38-173.us-west-2.compute.internal`
 	- The password can be found on pleasant under Root > Pro > Environments > AWS > PAT/PRD/UAT > 'Nscale Stage'
 - Navigate to `deploy/<project_name>`
 - Check how much space there is left, run `df -h` (confirm enough space available)
@@ -44,16 +45,19 @@
 - Run `make compile`
 - See below about changing environment variables
 - Check slack channel to make sure no one else is building and to inform other that you're building
-- Run `tmux ls`
-- Run `tmux new -s <project_name>` to start a new session
+- Run `tmux ls` [OPTIONAL]
+- Run `tmux new -s <project_name>` to start a new session [OPTIONAL]
 - In the tmux session, run `make build` to build the containers/app
 - When it's done building, run `make preview` to see if it looks good
-- Then, run `make deploy`
+- Then, run `make deploy` (confirm UAT/Prod)
+- Run `make check` to ensure that no deviation between containers on service box
 - Exit tmux, run `exit`
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
 - Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
+- Run `./container-run.sh make sync-picklists` [OPTIONAL]
 - Run `./container-run.sh make sync-translations` [OPTIONAL]
+- Run `./container-run.sh make sync-picklists` [OPTIONAL]
 - Navigate to project url (<project_name>.i-sightuat.com)
 
 
