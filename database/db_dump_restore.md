@@ -12,7 +12,7 @@ A database dump can be used to save users before re-setting the database so that
 	- Run SQL File: `psql -h localhost -U postgres -d isight < /path/file.sql`
 	- [ALTERNATIVELY] In the data dump file, select and copy the 'INSERT' lines. Then, log into psql and paste the lines making sure to check that there was no errors when inserting the lines into the database. You may need to paste them twice.
 
-#### Notes
+#### Flags
 pg_dump: Dump data from the database
 
 -h: flag for hostname (localhost)
@@ -22,6 +22,7 @@ pg_dump: Dump data from the database
 -d: flag for database name (isight)
 
 -t: flag for table name
+
 
 #### Working with sample users
 If doing a data dumb locally where sample users created other users, there can be errors when inserting the users back into the database because the created by ID (foreign key) will not match the sample users created after the database reset.
