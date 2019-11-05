@@ -14,7 +14,7 @@
 	- A bash alias called `azure` runs the above command with the username
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE002`
 	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
-- Navigate to `deploy/<project_name>`
+- Navigate to the project directory `cd deploy/<project_name>`
 - Check how much space there is left, run `df -h` (confirm enough space available)
 - Run `vim sys-config.json` and change the version number to match the one in the project (and github master)
 - Run `make compile`
@@ -41,7 +41,7 @@
 	- A bash alias called `aws` runs the above command with the username
 - To log into 'Nscale', run `ssh cexnscaleadmin@ip-172-31-38-173.us-west-2.compute.internal`
 	- The password can be found on pleasant under Root > Pro > Environments > AWS > PAT/PRD/UAT > 'Nscale Stage'
-- Navigate to `deploy/<project_name>`
+- Navigate to the project directory `cd deploy/<project_name>`
 - Check how much space there is left, run `df -h` (confirm enough space available)
 - Run `vim sys-config.json` and change the version number to match the one in the project (and github master)
 - Run `make compile`
