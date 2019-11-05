@@ -20,13 +20,11 @@
 - Run `make compile`
 - See below about changing environment variables
 - Check slack channel to make sure no one else is building and to inform other that you're building
-- Run `tmux ls` [OPTIONAL]
-- Run `tmux new -s <project_name>` to start a new session [OPTIONAL]
-- In the tmux session, run `make build` to build the containers/app
+- Run `make build` to build the containers/app
 - When it's done building, run `make preview` to see if it looks good
-- Then, run `make deploy`
+- Then, run `make deploy` (confirm UAT/Prod)
 - Run `make check` to ensure that no deviation between containers on service box
-- Exit tmux `exit`
+
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
 - Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
@@ -47,13 +45,11 @@
 - Run `make compile`
 - See below about changing environment variables
 - Check slack channel to make sure no one else is building and to inform other that you're building
-- Run `tmux ls` [OPTIONAL]
-- Run `tmux new -s <project_name>` to start a new session [OPTIONAL]
-- In the tmux session, run `make build` to build the containers/app
+- Run `make build` to build the containers/app
 - When it's done building, run `make preview` to see if it looks good
 - Then, run `make deploy` (confirm UAT/Prod)
 - Run `make check` to ensure that no deviation between containers on service box
-- Exit tmux, run `exit`
+
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
 - Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
@@ -75,12 +71,18 @@
 - Run `tmux ls`
 - run `tmux attach -t <session_name>`
 
+### tmux [optional]
+- Run `tmux ls` [OPTIONAL]
+- Run `tmux new -s <project_name>` to start a new session [OPTIONAL]
+
 ### Notes
 Running commands to modify/update/populate the database can be done before or after updating/deploying the app.
 
 
 ### make breakdown in Azure
-`make breakdown` doesn't work in azure. The tables need to be dropped manually. The following commands can be run in psql to drop the tables:
+`make breakdown` doesn't work in azure. The tables need to be dropped manually. The following commands can be run in psql to drop the tables inside the service box.
+
+- Run `psql -h <hostname> -U <username> --dbname=uat_<project_name>_isight`, then inside psql, paste these lines:
 ```
 DROP TABLE core_schemaversion CASCADE;
 DROP TABLE isight_entity CASCADE;
@@ -119,9 +121,19 @@ DROP TABLE sys_workflow_action CASCADE;
 DROP TABLE sys_workflow_state CASCADE;
 DROP TABLE sys_workflow_transition CASCADE;
 
+```
+- Then drop all remaining tables except the two `azure_superuser` owned tables.
+- Then exit psql
+
+- Run `psql -h <hostname> -U <username> --dbname=uat_<project_name>_isightaudit`, then inside psql, paste these lines:
+```
 DROP TABLE audit_log CASCADE;
 DROP TABLE core_schemaversion CASCADE;
 
+```
+- Then exit psql
+- Run `psql -h <hostname> -U <username> --dbname=uat_<project_name>_quartz`, then inside psql, paste these lines:
+```
 DROP TABLE core_schemaversion CASCADE;
 DROP TABLE qrtz_blob_triggers CASCADE;
 DROP TABLE qrtz_calendars CASCADE;
@@ -135,16 +147,25 @@ DROP TABLE qrtz_simple_triggers CASCADE;
 DROP TABLE qrtz_simprop_triggers CASCADE;
 DROP TABLE qrtz_triggers CASCADE;
 
+```
+- Then exit psql
+- Run `psql -h <hostname> -U <username> --dbname=uat_<project_name>_filestore`, then inside psql, paste these lines:
+```
 DROP TABLE core_schemaversion CASCADE;
 DROP TABLE file_uploads CASCADE;
-```
 
-Then, once the tables have been dropped, you can run:
+```
+- Then exit psql
+
+
+#### Note:
+
+Once the tables have been dropped, you can run:
 `./container-run.sh make breakdown DISABLE_DB_DELETE=true NODE_ENV=development DISABLE_ES_SNAPSHOT=true`
 
-`./container-run.sh make setup`
+After rebuilding the app, make a dev setup and if required, re-insert the users.
+`./container-run.sh make setup` (This will reset the database)
 
-This will reset the database 
 
 ***
 [Table of Contents](../README.md)
