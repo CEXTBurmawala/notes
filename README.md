@@ -15,7 +15,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Adding sub section](./programing_app/adding_sub_section.md)
 - [Suggested Links](./programing_app/suggested_links.md)
 - [Integration Changes](./programing_app/integration_change.md)
-- [fall_2019_patch Vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
+- [Fall 2019 Patch Vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 
 ## Docker/deploying
 - [Deploy to UAT - Jenkins](./docker_deploy/deploy_to_UAT_jenkins.md)
