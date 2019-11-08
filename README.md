@@ -14,10 +14,14 @@ This repository is intended to be a notebook for work-related notes.
 - [Extend platform file](./programing_app/extend_platform_file.md)
 - [Adding sub section](./programing_app/adding_sub_section.md)
 - [Suggested Links](./programing_app/suggested_links.md)
+- [Integration Changes](./programing_app/integration_change.md)
+- [fall_2019_patch Vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 
 ## Docker/deploying
 - [Deploy to UAT - Jenkins](./docker_deploy/deploy_to_UAT_jenkins.md)
 - [Deploy to Prod - Jenkins](./docker_deploy/deploy_to_Prod_jenkins.md)
+- [Deploy to UAT - Nscale](./docker_deploy/deploy_to_UAT_nscale.md)
+- [Deploy to Prod - Nscale](./docker_deploy/deploy_to_Prod_nscale.md)
 - [Docker general](./docker_deploy/docker_general.md)
 - [Dockerize Node.js](./docker_deploy/dockerize_nodejs.md)
 - [Linking containers](./docker_deploy/network_containers.md)
