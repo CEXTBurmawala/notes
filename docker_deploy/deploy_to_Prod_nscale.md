@@ -1,5 +1,7 @@
 ## Deploy to Prod - nscale
 
+It is good practice to `make build` the night before the push, and then `make deploy` in the morning during the prod push window.
+
 ### Deployment process
 
 

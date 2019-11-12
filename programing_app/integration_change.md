@@ -8,7 +8,7 @@ Once the changes are made to include the integration, the following commands nee
 - `export INTEGRATION_LOCAL_IMPORT=true`
 - `export INTEGRATION_LOCAL_PATH=<path_to_sample_file>`
 - `node script/import-integration-parties/`
-- `make sync-data-dictionary && make es-reindex-data`
+- `make sync-data-dictionary && make es-reindex-data` [OPTIONAL]
 
 ***
 [Table of Contents](../README.md)
