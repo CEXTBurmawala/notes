@@ -16,6 +16,8 @@ This repository is intended to be a notebook for work-related notes.
 - [Suggested Links](./programing_app/suggested_links.md)
 - [Integration Changes](./programing_app/integration_change.md)
 - [Fall 2019 Patch Vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
+- [External Capture ON/Off](./programing_app/external_capture.md)
+- [External Capture Modal](./programing_app/external_capture_modal.md)
 
 ## Docker/deploying
 - [Deploy to UAT - Jenkins](./docker_deploy/deploy_to_UAT_jenkins.md)
