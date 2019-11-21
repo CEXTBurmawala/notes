@@ -32,10 +32,8 @@
 	- PROBUILD-###
 	- develop
 	- master
-- Get required node version from the platform 'package.json' file.
 - In both the platform and project directories:
-	- Run `node -v` to check the node version being used.
-	- Run `nvm use <0.0.0>` to set the node version to be used.
+	- Run `nvm use` to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
 - In platform directory:
 	- Run `yarn`
 	- Run `yarn link`
@@ -50,10 +48,8 @@
 - Create a directory for the customer in `~/git/config_<name>_v5` directory with the same name as the git repo.
 - Find repo on the i-sight github page `github.com/i-Sight/config_<name>_v5` and clone the 'develop' branch into the project directory.
 - Create a new branch before starting to work on the project.
-- Get required node version from the platform 'package.json' file.
 - In both the platform and project directories:
-	- Run `node -v` to check the node version being used.
-	- Run `nvm use <0.0.0>` to set the node version to be used.
+	- Run `nvm use` to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
 - In platform directory:
 	- Run `yarn`
 	- Run `yarn link`

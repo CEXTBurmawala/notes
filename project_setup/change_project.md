@@ -10,9 +10,9 @@
 
 ### Use next node version
 - In next __platform__ directory:
-	- Run `nvm use <0.0.0>`
+	- Run `nvm use`  to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
 - In next __project__ directory:
-	- Run `nvm use <0.0.0>`
+	- Run `nvm use`  to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
 
 ### Start next project
 - In next __platform__ directory:
