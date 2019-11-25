@@ -19,20 +19,23 @@ This repository is intended to be a notebook for work-related notes.
 - [External Capture ON/Off](./programing_app/external_capture.md)
 - [External Capture Modal](./programing_app/external_capture_modal.md)
 
-## Docker/deploying
-- [Deploy to UAT - Jenkins](./docker_deploy/deploy_to_UAT_jenkins.md)
-- [Deploy to Prod - Jenkins](./docker_deploy/deploy_to_Prod_jenkins.md)
-- [Deploy to UAT - Nscale](./docker_deploy/deploy_to_UAT_nscale.md)
-- [Deploy to Prod - Nscale](./docker_deploy/deploy_to_Prod_nscale.md)
-- [Docker general](./docker_deploy/docker_general.md)
-- [Dockerize Node.js](./docker_deploy/dockerize_nodejs.md)
-- [Linking containers](./docker_deploy/network_containers.md)
-- [Docker compose](./docker_deploy/docker_compose.md)
-- [Accessing Azure](./docker_deploy/access_azure.md)
+## Deploying
+- [Deploy to UAT - Jenkins](./deploy/deploy_to_UAT_jenkins.md)
+- [Deploy to Prod - Jenkins](./deploy/deploy_to_Prod_jenkins.md)
+- [Deploy to UAT - Nscale](./deploy/deploy_to_UAT_nscale.md)
+- [Deploy to Prod - Nscale](./deploy/deploy_to_Prod_nscale.md)
+- [Accessing Azure](./deploy/access_azure.md)
+- [Change mail host](./deploy/change_mail_host.md)
 
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
 - [Migrations general](./database/migrations_general.md)
+
+## Docker
+- [Dockerize Node.js](./docker/dockerize_nodejs.md)
+- [Linking containers](./docker/network_containers.md)
+- [Docker compose](./docker/docker_compose.md)
+- [Docker general](./docker/docker_general.md)
 
 ## FTP
 - [Logging onto FTP](./ftp/logging_onto_ftp.md)
