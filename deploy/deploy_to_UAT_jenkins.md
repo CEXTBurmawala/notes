@@ -1,7 +1,8 @@
 ## Deploy to UAT - Jenkins
 
+Open Word document from IT ticket for the project. It can be found in your emails by searching the project name. IT would have created the environment. Click on "View ticket" which will take you to the service desk where you can view the word document.
+
 ### Deployment process
-- open Word document from IT ticket for the project
 - log into Jenkins
 - navigate to Team Pro > non-Prod (UAT)
 - find and click on the project name
