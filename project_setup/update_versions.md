@@ -22,6 +22,8 @@ The Platform and Probase should have the latest patch versions and they should m
 	- If not configured, Add the 'pro base' as 'base' in order to pull updates if required later on by running `git remote add base git@github.com:i-Sight/config_pro_base_v5.git`
 - Run `git fetch base`
 - Run `git merge base/v5.x.x` (example: v5.3.x)
+- Run `git add -A` and fix any conflicts that may exist.
+- For the commit, run the following `git commit --no-edit`
 
 ***
 [Table of Contents](../README.md)
