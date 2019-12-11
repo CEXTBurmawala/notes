@@ -6,11 +6,11 @@
 - Choose the project to be deployed and click on the 'Name'
 - Click on 'Build with Parameters' from left navigation pane
 - Fill in these fields:
-	- SAFETY_CHECK: The database INTERNAL IP address
+	- SAFETY_CHECK: The 'DBASE' INTERNAL IP address
 	- DESCRIPTION: Provide description ex: initial deploy
-	- GIT_TAG: Choose tag for release version
-	- BYPASSS_TAG: if checked, Jenkins will not create a release tag and GIT_BRANCH will need to be specified.
-	- GIT_BRANCH: Only needs to be specified if BYPASSS_TAG is unchecked. Set it to 'master'.
+	- GIT_TAG: provide tag for release version (ex. v1.0.0)
+	- BYPASSS_TAG: un-check box.
+	- GIT_BRANCH: Set it to 'master'.
 	- TASK: 'Other'
 	- POSTRUN_SCRIPT: See notes below
 - Click 'Build' once all information is inputted.
