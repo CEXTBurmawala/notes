@@ -9,7 +9,7 @@
 	- SAFETY_CHECK: The 'DBASE' INTERNAL IP address
 	- DESCRIPTION: Provide description ex: initial deploy
 	- GIT_TAG: provide tag for release version (ex. v1.0.0)
-	- BYPASSS_TAG: un-check box.
+	- BYPASSS_TAG: un-check box  (if tag already exists on github, check the box).
 	- GIT_BRANCH: Set it to 'master'.
 	- TASK: 'Other'
 	- POSTRUN_SCRIPT: See notes below
