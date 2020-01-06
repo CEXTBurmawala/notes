@@ -35,12 +35,9 @@ Somethings are different if redeploying to UAT.
 - Click on `<project_name>-uat-deploy-<version>` tab to see deploy progress.
 - Once deploy is complete, navigate to the UAT URL and test the app.
 - In Jira, mark the ticket 'Ready for QA'
-
-### Notes on releases
-- In github repo, click on 'releases'
 ***
 
-### Round 1 - POSTRUN_SCRIPT
+### POSTRUN_SCRIPT - Initial
 ```
 export NODE_ENV=development
 make breakdown
@@ -48,7 +45,7 @@ make setup
 make create-sample-users
 ```
 
-### Round 2 - POSTRUN_SCRIPT
+### POSTRUN_SCRIPT - Non-initial
 ```
 export NODE_ENV=development
 make users-export
