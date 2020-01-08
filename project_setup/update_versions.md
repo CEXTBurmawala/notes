@@ -13,7 +13,10 @@ The Platform and Probase should have the latest patch versions and they should m
 - Run `make docker-up`
 - Run `yarn link`
 
-### Update version of project Probase ** only works for platform version [^5.0.x]
+### [4.x apps] Update version of project Probase
+- In the app directory, locate the file `platform.version` and manually update the version number.
+
+### [5.x apps] Update version of project Probase
 - Find most up to date pro base version by going to `https://github.com/i-Sight/config_pro_base_v5`
 	- Select the branch that corresponds to the version required (ex: v5.0.x)
 	- Click on the 'package.json' files to find the latest patch version.
