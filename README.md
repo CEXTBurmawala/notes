@@ -45,9 +45,3 @@ This repository is intended to be a notebook for work-related notes.
 
 ## Vim
 - [SpaceVim Setup](./vim/spacevim_setup.md)
-
-:scroll: 
-	
-:inbox_tray:
-	
-:question:
