@@ -23,13 +23,13 @@ FTP_INTEGRATION_HOUR_OF_DAY=1
 FTP_INTEGRATION_INTERVAL=weekly
 FTP_INTEGRATION_DAY_OF_WEEK=1
 ```
-
+***
 ### STEPS
 
 #### [1] In the database box
 - navigate into the integration folder by running `cd /var/isight/integration/`
 - run `ls isight_backup` to confirm CSV file is there
-	- if not, add csv data but uploading sample file
+	- if not, add csv data by creating a file and copy/pasting or upload a sample file
 - if file is in `isight_backup` directory, move it to parent directory
 	- run `mv isight_backup/<file_name>.csv .`
 
