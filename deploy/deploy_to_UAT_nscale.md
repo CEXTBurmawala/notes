@@ -29,10 +29,10 @@
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
 - Run `docker ps` to verify that the containers are all running
-- Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
-- Run `./container-run.sh make sync-picklists` [OPTIONAL]
-- Run `./container-run.sh make sync-translations` [OPTIONAL]
-- Run `./container-run.sh make sync-picklists` [OPTIONAL]
+	- Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
+	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
+	- Run `./container-run.sh make sync-translations` [OPTIONAL]
+	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
 - Navigate to project url (<project_name>.isightuat.com)
 
 
