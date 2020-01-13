@@ -7,15 +7,15 @@ Short list with descriptions of common commands used when setting up or deployin
 Deletes all databases
 
 #### make setup
-Creates databases
-- Creates the databases and runs platform scripts to create data-dictionary and run migrations
+- Creates databases
+	- Creates the databases and runs platform scripts to create data-dictionary and run migrations
 
-syncs data-dictionary
-- Runs the script `node script/sync-data-dictionary.js`
+- syncs data-dictionary
+	- Runs the script `node script/sync-data-dictionary.js`
 
-populate
-- Runs the following commands:\
-[sync-options,	populate-system-users, populate-translations, sync-picklist-types, sync-picklists, sync-permissions, sync-themes, populate-triggers, populate-user-roles, populate-grids, populate-notifications, populate-entity-associations, populate-layouts, populate-standard-responses, populate-config-app-custom]
+- populate
+	- Runs the following commands:\
+	[sync-options,	populate-system-users, populate-translations, sync-picklist-types, sync-picklists, sync-permissions, sync-themes, populate-triggers, populate-user-roles, populate-grids, populate-notifications, populate-entity-associations, populate-layouts, populate-standard-responses, populate-config-app-custom]
 
 #### make populate-lists
 - Runs script: `node script/remove-picklists.js`
