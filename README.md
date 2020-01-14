@@ -35,6 +35,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Database dump and restore](./database/db_dump_restore.md)
 - [Migrations general](./database/migrations_general.md)
 - [Make commands](./database/make_commands.md)
+- [Reset password](./database/reset_password.md)
 
 ## Docker
 - [Dockerize Node.js](./docker/dockerize_nodejs.md)
