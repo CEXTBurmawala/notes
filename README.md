@@ -29,7 +29,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Deploy to Prod - Nscale](./deploy/deploy_to_Prod_nscale.md)
 - [Accessing Azure](./deploy/access_azure.md)
 - [Change mail host](./deploy/change_mail_host.md)
-- [Integration setup](./deploy/integration.md)
+- [Integration setup - Jenkins](./deploy/integration_setup_jenkins.md)
 
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
