@@ -15,7 +15,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Extend platform file](./programing_app/extend_platform_file.md)
 - [Adding sub section](./programing_app/adding_sub_section.md)
 - [Suggested Links](./programing_app/suggested_links.md)
-- [Integration Changes](./programing_app/integration_change.md)
+- [Integration general](./programing_app/integration_general.md)
 - [Fall 2019 Patch Vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 - [External Capture ON/Off](./programing_app/external_capture.md)
 - [External Capture Modal](./programing_app/external_capture_modal.md)
