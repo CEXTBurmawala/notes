@@ -2,7 +2,7 @@
 
 It is good practice to `make build` the night before the push, and then `make deploy` in the morning during the prod push window.
 
-### Deployment process
+### Deployment process [Azure]
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE006`
 	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
@@ -40,6 +40,26 @@ It is good practice to `make build` the night before the push, and then `make de
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE006`
 	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
+- Navigate to the project directory `cd deploy/<project_name>`
+- Check how much space there is left, run `df -h` (confirm enough space available)
+- Run `vim sys-config.json` and change the version number to match the one in the project (and github master)
+- Run `make compile`
+- See below about changing environment variables
+- Run `cat workspace/config_<project_name>_v5/package.json` to confirm that the right release number was compiled
+- Check slack channel to make sure no one else is building and to inform other that you're building
+- Run `make build` to build the containers/app
+- When it's done building, run `make preview` to see if it looks good
+- Then, run `make deploy` (confirm UAT/Prod)
+- Run `make check` to ensure that no deviation between containers on service box
+
+- Navigate to the project directory `cd deploy/<project_name>`
+- Go into service box, run `make ssh`
+- Run `docker ps` to verify that the containers are all running
+	- Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
+	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
+	- Run `./container-run.sh make sync-translations` [OPTIONAL]
+	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
+- Navigate to project url (<project_name>.isight.com)
 
 ### Re-deployment [AWS]
 - To log into bastion1, run `ssh -i key_name cex_user_name@ec2-34-214-84-10.us-west-2.compute.amazonaws.com`
