@@ -36,6 +36,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Migrations general](./database/migrations_general.md)
 - [Make commands](./database/make_commands.md)
 - [Reset password](./database/reset_password.md)
+- [Clear lockout](./database/clear_lockout.md)
 
 ## Docker
 - [Dockerize Node.js](./docker/dockerize_nodejs.md)
