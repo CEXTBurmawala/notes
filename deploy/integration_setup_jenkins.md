@@ -15,7 +15,7 @@ file of their profile data. The app will run a script that will integrate the in
 - repeat all the steps above for "service" box and have both boxes open in separate browser tabs
 
 
-These variables need to be added to the `SERVER_ENVARS` section of the build parameters (at the bottom):
+These variables need to be added to the `SERVER_ENVARS` section of the build parameters:
 ```
 FTP_INTEGRATION_FOLDER_PATH=/usr/local/data/integration
 FTP_INTEGRATION_ENTITY=person

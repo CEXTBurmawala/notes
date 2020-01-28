@@ -30,6 +30,8 @@ This repository is intended to be a notebook for work-related notes.
 - [Accessing Azure](./deploy/access_azure.md)
 - [Change mail host](./deploy/change_mail_host.md)
 - [Integration setup - Jenkins](./deploy/integration_setup_jenkins.md)
+- [Integration setup - Nscale](./deploy/integration_setup_nscale.md)
+- [Tmux](./deploy/tmux.md)
 
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
