@@ -34,6 +34,9 @@ set incsearch
 " Set mouse scroll to active
 set mouse=a
 
+" Show hidden files/directories by default
+let NERDTreeShowHidden=1
+
 " Aliases for long commands
 cabbrev t NERDTree
 cabbrev tf NERDTreeFind
