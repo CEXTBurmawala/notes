@@ -26,8 +26,14 @@ Integration allows the customer to integrate information (profiles) into their a
 - edit `container-run.sh` to mount the volume:
 	- add `-v /home/cexadministrator/integration:/usr/local/data/integration` to the `docker run` command
 
+### To get into app container
+- run `docker ps` and copy the container_id of `8005` (usually the second container)
+- run `docker exec -it <container_id> bash`
+
 #### General Notes
-- 
+- client uploads a .csv file to their SFTP folder
+- IT's script fetches the file on a schedule and places it in the service box (`/home/cexadministrator/integration/`)
+- At the scheduled time (i.e. 1 hours after IT scheduled cronjob) the cronjob in the service box will spin up a specific container which mounts the volume and then runs the import script inside the container.
 
 ***
 [Table of Contents](../README.md)
