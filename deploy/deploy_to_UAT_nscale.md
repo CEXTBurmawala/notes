@@ -9,6 +9,9 @@
 - Mark the release as being 'pre-release' until it is released in prod
 - Click 'Publish release'
 
+### Note
+- Running commands to modify/update/populate the database can be done before or after updating/deploying the app.
+
 ### Re-deployment [Azure]
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 	- A bash alias called `azure` runs the above command with the username
@@ -25,16 +28,15 @@
 - When it's done building, run `make preview` to see if it looks good
 - Then, run `make deploy` (confirm UAT/Prod)
 - Run `make check` to ensure that no deviation between containers on service box
-
-- Navigate to the project directory `cd deploy/<project_name>`
+After deploying:
 - Go into service box, run `make ssh`
 - Run `docker ps` to verify that the containers are all running
 	- Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
 	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
 	- Run `./container-run.sh make sync-translations` [OPTIONAL]
 	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
-- Navigate to project url (<project_name>.isightuat.com)
-
+- Navigate to project url `<project_name>.i-sightuat.com`
+***
 
 ### Re-deployment [AWS]
 - To log into bastion1, run `ssh -i key_name cex_user_name@ec2-34-214-84-10.us-west-2.compute.amazonaws.com`
@@ -52,15 +54,18 @@
 - When it's done building, run `make preview` to see if it looks good
 - Then, run `make deploy` (confirm UAT/Prod)
 - Run `make check` to ensure that no deviation between containers on service box
-
-- Navigate to the project directory `cd deploy/<project_name>`
+After deploying:
 - Go into service box, run `make ssh`
 - Run `docker ps` to verify that the containers are all running
 - Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
 - Run `./container-run.sh make sync-picklists` [OPTIONAL]
 - Run `./container-run.sh make sync-translations` [OPTIONAL]
 - Run `./container-run.sh make sync-picklists` [OPTIONAL]
-- Navigate to project url (<project_name>.i-sightuat.com)
+- Navigate to project url `<project_name>.i-sightuat.com`
+***
+
+
+
 
 
 ### Change environment variables
@@ -71,20 +76,25 @@
 ### Data box
 - From project directory, type `make ssh MACHINE=db` to get into the data box
 
-### To re-attach to a tmux session
-- Run `tmux ls`
-- run `tmux attach -t <session_name>`
+### Clear the UAT box
+- run `df -h` to see how much space is left on the box
+- if the box is over 80% in use, it's a good idea to clear it.
+- run `docker images -q | xargs docker rmi` Will remove all images on the server
+- run `docker images` to see the list and select the numerical_id to be deleted 
+- run `docker rmi <numerical_id>` to delete the images(s)
+- run `df -h` to see how much space is used after deleting the images
 
-### tmux [optional]
-- Run `tmux ls` [OPTIONAL]
-- Run `tmux new -s <project_name>` to start a new session [OPTIONAL]
-
-### Notes
-Running commands to modify/update/populate the database can be done before or after updating/deploying the app.
+### Go into container to see the files
+- run `make ssh` to go into the service box
+- run `docker ps` and copy the container ID you want (should be the one on port 8005)
+- copy the container ID of the redis container and run `docker exec -it <container_id> bash`
 
 
+***
 ### make breakdown in Azure
 `make breakdown` doesn't work in azure. The tables need to be dropped manually. The following commands can be run in psql to drop the tables inside the service box.
+
+- If users need to be dumped before making breakdown, see notes [here](../database/db_dump_restore.md)
 
 - Run `psql -h <hostname> -U <username> --dbname=uat_<project_name>_isight`, then inside psql, paste these lines:
 ```
@@ -163,12 +173,10 @@ DROP TABLE file_uploads CASCADE;
 
 
 #### Note:
-
 Once the tables have been dropped, you can run:
 `./container-run.sh make breakdown DISABLE_DB_DELETE=true NODE_ENV=development DISABLE_ES_SNAPSHOT=true`
 
-After rebuilding the app, make a dev setup and if required, re-insert the users.
-`./container-run.sh make setup` (This will reset the database)
+After rebuilding the app, make a dev setup and if required, re-insert the users. `./container-run.sh make setup` (This will reset the database)
 
 
 ***

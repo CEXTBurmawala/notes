@@ -1,9 +1,6 @@
 ## Integration General
 
-Integration provides the customer the ability to connect their own, external data with the 
-i-Sight app. User information can be searched when creating a new party and the information 
-in the external CSV file will be auto-filled into the app fields as prescribed in the field 
-mapping file (`/script/import-integration-parties/data-mapping.js`).
+Integration provides the customer the ability to connect their own, external data with the i-Sight app. User information can be searched when creating a new party and the information in the external CSV file will be auto-filled into the app fields as prescribed in the field mapping file (`/script/import-integration-parties/data-mapping.js`).
 
 General notes:
 - integration files are to be in CSV format
@@ -11,12 +8,11 @@ General notes:
 
 
 ## Integration [5.x app]
-
 Notes regarding integration setup can be found here:
 [FTP.md](https://github.com/i-Sight/config_pro_base_v5/blob/v5.3.x/FTP.md)
 
 #### add integration code to app
-- sdf
+- **TO BE FILLED OUT**
 
 #### testing integration locally
 - set these envars locally:
@@ -39,15 +35,12 @@ Notes regarding integration setup can be found here:
 ## Integration [4.x app]
 
 #### Add integration code to app
-- in `script/import-integration-parties/data-mapping.js`, add all the sample file fields and map
-them to the party fields. At the top of the file, a database table needs to be set as the integration
-table so that the app can populate the database table with the integration file rows.
+- in `script/import-integration-parties/data-mapping.js`, add all the sample file fields and map them to the party fields. At the top of the file, a database table needs to be set as the integration table so that the app can populate the database table with the integration file rows.
 - run the script `node script/import-integration-parties/generate-entity-files.js` in order to create
 the entity for the new table.
 - log into psql and check that the table was created.
 - run a dev setup, run `make breakdown && make setup && make create-sample-users`
-- run `pg_dump -h localhost -U postgres -d isight -t sys_employee --schema-only` in order to get the
-sql command in order to create a migration script that will be run in UAT/Prod.
+- run `pg_dump -h localhost -U postgres -d isight -t sys_employee --schema-only` in order to get the sql command in order to create a migration script that will be run in UAT/Prod.
 	- ensure to choose the primary key in the script
 - add any missing translations needed to the `en_US.js` file
 - search for 'entityType' in the code and remove them

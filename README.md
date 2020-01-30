@@ -50,4 +50,4 @@ This repository is intended to be a notebook for work-related notes.
 - [Logging onto FTP](./ftp/logging_onto_ftp.md)
 
 ## Vim
-- [SpaceVim Setup](./vim/spacevim_setup.md)
+- [Vim Setup](./vim/vim_setup.md)

@@ -1,7 +1,6 @@
 ## Setup integration - Jenkins
 
-Integration allows the customer to integrate information (profiles) into their app based on a CSV 
-file of their profile data. The app will run a script that will integrate the information/data into the app.
+Integration allows the customer to integrate information (profiles) into their app based on a CSV file of their profile data. The app will run a script that will integrate the information/data into the app.
 
 **The app needs to be deployed before the integration can be setup.
 
