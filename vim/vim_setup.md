@@ -34,13 +34,16 @@ set incsearch
 " Set mouse scroll to active
 set mouse=a
 
+" Set yank to system clipboard by default
+set clipboard=unnamed
+
 " Show hidden files/directories by default
 let NERDTreeShowHidden=1
 
 " Aliases for long commands
 cabbrev t NERDTree
 cabbrev tf NERDTreeFind
-cabbrev pi PLugInstall
+cabbrev pi PlugInstall
 
 ```
 

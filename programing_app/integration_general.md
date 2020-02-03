@@ -12,7 +12,8 @@ Notes regarding integration setup can be found here:
 [FTP.md](https://github.com/i-Sight/config_pro_base_v5/blob/v5.3.x/FTP.md)
 
 #### add integration code to app
-- **TO BE FILLED OUT**
+- Ensure that there is a field in the person entity that will be used as the  unique indentifier and that there is a field in the CSV that will be mapped to the unique identifier.
+- Ensure that there is a field in the person entity for each column in the CSV that the customer wants mapped.
 
 #### testing integration locally
 - set these envars locally:

@@ -18,7 +18,7 @@ These variables need to be added to the `SERVER_ENVARS` section of the build par
 ```
 FTP_INTEGRATION_FOLDER_PATH=/usr/local/data/integration
 FTP_INTEGRATION_ENTITY=person
-FTP_INTEGRATION_HOUR_OF_DAY=1
+FTP_INTEGRATION_HOUR_OF_DAY=17
 FTP_INTEGRATION_INTERVAL=weekly
 FTP_INTEGRATION_DAY_OF_WEEK=1
 ```
