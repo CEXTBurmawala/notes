@@ -39,6 +39,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Make commands](./database/make_commands.md)
 - [Reset password](./database/reset_password.md)
 - [Clear lockout](./database/clear_lockout.md)
+- [Manually make breakdown](./database/manual_make_breakdown.md)
 
 ## Docker
 - [Dockerize Node.js](./docker/dockerize_nodejs.md)
