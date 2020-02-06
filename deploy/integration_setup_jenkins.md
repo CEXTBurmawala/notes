@@ -2,7 +2,7 @@
 
 Integration allows the customer to integrate information (profiles) into their app based on a CSV file of their profile data. The app will run a script that will integrate the information/data into the app.
 
-**The app needs to be deployed before the integration can be setup.
+NOTE: The app needs to be deployed before the integration can be setup.
 
 #### In Jenkins
 - navigate to Prod/non-prod, and click on "Teleport-OpenSSHSession"
@@ -22,7 +22,7 @@ FTP_INTEGRATION_HOUR_OF_DAY=17
 FTP_INTEGRATION_INTERVAL=weekly
 FTP_INTEGRATION_DAY_OF_WEEK=1
 ```
-***
+
 ### STEPS
 
 #### [1] In the database box

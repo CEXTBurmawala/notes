@@ -18,12 +18,15 @@ Notes regarding integration setup can be found here:
 #### testing integration locally
 - set these envars locally:
 	```
-	export FTP_INTEGRATION_FOLDER_PATH=
-	export FTP_INTEGRATION_ENTITY=
-	export FTP_INTEGRATION_HOUR_OF_DAY=
-	export FTP_INTEGRATION_DAY_OF_WEEK=
-	export FTP_INTEGRATION_INTERVAL=
+	export FTP_INTEGRATION_FOLDER_PATH=/Users/flavoie/Documents/CUSTOMERS/<name>/integration
+	export FTP_INTEGRATION_ENTITY=person
+	export FTP_INTEGRATION_HOUR_OF_DAY=17
+	export FTP_INTEGRATION_INTERVAL=daily
 	```
+	- The folder path is the path to the sample integration file on your local machine. 
+	- The entity should be either person or party
+	- The hour of the day should be be betwen 1-23 (UTC time)
+	- The interval should be either weekly or daily 
 - run `node script/ftp-integration/enable.js` to enable integration in the app
 	- if script fails, set the `export APP_CONFIG_PATH=$(pwd)`
 - log into the app and go to Settings > Workflows

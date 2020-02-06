@@ -32,6 +32,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Integration setup - Jenkins](./deploy/integration_setup_jenkins.md)
 - [Integration setup - Nscale](./deploy/integration_setup_nscale.md)
 - [Tmux](./deploy/tmux.md)
+- [Access Azure from home](./deploy/home_access_azure.md)
 
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)

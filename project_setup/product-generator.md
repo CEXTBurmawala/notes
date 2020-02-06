@@ -19,8 +19,12 @@
 
 ### Generate project files
 - In terminal, navigate to the project directory
-- Run `product-generator generate --platform ../_platform/5.2.x ../fieldspecs/<name>.xlsx`
+- Run `product-generator generate --platform ../_platform/<version> ../fieldspecs/<name>.xlsx`
 Project files should now be generated. Run `git status` to see all the files created.
+
+### Update generator
+- Navigate to location where the generator repository is on your machine (`~/git/product-self-service`)
+- Ensure that you are on the master branch and run `git pull origin master`
 
 ***
 [Table of Contents](../README.md)
