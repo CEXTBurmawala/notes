@@ -34,6 +34,7 @@ Notes regarding integration setup can be found here:
 	- click on the "FTP Integration" in the table
 	- click on the edit button
 	- choose a unique identifier in the list and click save
+	- match all the person fields to the correct integration file header
 - run `node script/ftp-integration/import.js` to import the integration data into the app
 
 ## Integration [4.x app]
