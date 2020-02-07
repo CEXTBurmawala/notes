@@ -44,6 +44,7 @@ FTP_INTEGRATION_DAY_OF_WEEK=1
 - edit the mapping and set the "unique identifier"
 
 #### [4] In the service box
+While still inside the docker container
 - run `node script/ftp-integration/import.js`
 
 #### [5] In the app
