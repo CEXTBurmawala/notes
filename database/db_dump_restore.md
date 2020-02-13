@@ -19,8 +19,19 @@ See [this](https://docs.microsoft.com/en-us/azure/postgresql/howto-migrate-using
 - Finally, run `./container-run.sh make es-reindex-data` to reindex the elastic search.
 
 ### Restore Data
-Data can be restored in two main ways, with the `pg_restore` command or by running `psql -h <host_name> -U <username> -d <database> < /path/to/dump/file.sql`
-- sdf
+Data can be restored in two main ways:
+1. With the `pg_restore` command or,
+2. By running `psql -h <host_name> -U <username> -d <database> < /path/to/dump/file.sql`
+- If the dump was created as a plain text file, or a custom-format (`pg_dump -Fc`) then method 1 must be used.
+- If the dump was created as a `.sql` file, `psql < backup.sql` method 2 must be used.
+
+To restore the data locally:
+- perform a `pg_dump` of the entire database as an sql file.
+- run `make breakdown` and `make setup`
+- once done, go into the database and delete the `isight` database
+- now re-create the `isight` database. We now have an empty isight database to dump our data into
+- run `psql -h localhost -U postgres -d isight < /path/to/file.sql`
+- run `make sync-data-dictionary` and `make es-reindex-data`
 
 #### Flags
 -h: flag for hostname (localhost) \
@@ -29,7 +40,6 @@ Data can be restored in two main ways, with the `pg_restore` command or by runni
 -t: flag for table name \
 --data-only: only dumps the data, not the schema \
 --column-insets: dump data as individual insert statements
-
 
 
 #### Working with sample users

@@ -12,7 +12,7 @@ Notes regarding integration setup can be found here:
 [FTP.md](https://github.com/i-Sight/config_pro_base_v5/blob/v5.3.x/FTP.md)
 
 #### add integration code to app
-- Ensure that there is a field in the person entity that will be used as the  unique indentifier and that there is a field in the CSV that will be mapped to the unique identifier.
+- Ensure that there is a field in the person entity that will be used as the  unique identifier and that there is a field in the CSV that will be mapped to the unique identifier.
 - Ensure that there is a field in the person entity for each column in the CSV that the customer wants mapped.
 
 #### testing integration locally
@@ -25,7 +25,7 @@ Notes regarding integration setup can be found here:
 	```
 	- The folder path is the path to the sample integration file on your local machine. 
 	- The entity should be either person or party
-	- The hour of the day should be be betwen 1-23 (UTC time)
+	- The hour of the day should be be between 1-23 (UTC time)
 	- The interval should be either weekly or daily 
 - run `node script/ftp-integration/enable.js` to enable integration in the app
 	- if script fails, set the `export APP_CONFIG_PATH=$(pwd)`
