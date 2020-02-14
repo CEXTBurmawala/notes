@@ -12,6 +12,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'pangloss/vim-javascript'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Set the colorscheme to be used
@@ -45,6 +46,9 @@ cabbrev t NERDTree
 cabbrev tf NERDTreeFind
 cabbrev pi PlugInstall
 
+" Configuration to make CtrlP faster
+map ff :CtrlP<.><cr>
+let g:ctrlp_working_path_mode = 'ra'
 ```
 
 #### Add bash_profile alias to config file
