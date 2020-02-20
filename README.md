@@ -22,6 +22,7 @@ This repository is intended to be a notebook for work-related notes.
 - [External Capture Modal](./programing_app/external_capture_modal.md)
 - [External 400 Error](./programing_app/external_400_error.md)
 - [Configure SSO](./programing_app/sso.md)
+- [Change Cron Schedule](./programing_app/change_cron_schedule.md)
 
 ## Deploying
 - [Deploy to UAT - Jenkins](./deploy/deploy_to_UAT_jenkins.md)
