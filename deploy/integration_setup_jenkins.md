@@ -4,6 +4,8 @@ Integration allows the customer to integrate information (profiles) into their a
 
 NOTE: The app needs to be deployed before the integration can be setup.
 
+Link to[Integration General](../programing_app/integration_general.md)
+
 #### In Jenkins
 - navigate to Prod/non-prod, and click on "Teleport-OpenSSHSession"
 - click on "Build with Parameters", pick the project in the dropdown list (database)
