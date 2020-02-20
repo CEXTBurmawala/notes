@@ -9,7 +9,7 @@ General notes:
 
 ## Integration [5.x app]
 Notes regarding integration setup can be found here:
-[FTP.md](https://github.com/i-Sight/config_pro_base_v5/blob/v5.3.x/FTP.md)
+[FTP.md](https://github.com/i-Sight/config_pro_base_v5/blob/v5.4.x/docs/FTP.md)
 
 #### add integration code to app
 - Ensure that there is a field in the person entity that will be used as the  unique identifier and that there is a field in the CSV that will be mapped to the unique identifier.
