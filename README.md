@@ -43,6 +43,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Reset password](./database/reset_password.md)
 - [Clear lockout](./database/clear_lockout.md)
 - [Manually make breakdown](./database/manual_make_breakdown.md)
+- [Run SQL file from psql](./database/run_sql.md)
 
 ## Docker
 - [Dockerize Node.js](./docker/dockerize_nodejs.md)

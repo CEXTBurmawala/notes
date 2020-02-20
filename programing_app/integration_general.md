@@ -6,6 +6,7 @@ General notes:
 - integration files are to be in CSV format
 - the headers should be consistently formatted (cases type)
 
+Link to [Integration Setup - Jenkins](../deploy/integration_setup_jenkins.md)
 
 ## Integration [5.x app]
 Notes regarding integration setup can be found here:
