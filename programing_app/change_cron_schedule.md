@@ -11,7 +11,7 @@ The change was made to the pro base to enable the deletion and re-creation of th
 [2] build the teleport session in Jenkins for the service box\
 [3] in the service box, run `docker ps` and copy the container ID for the `isight_server.1...`\
 [4] run `docker exec -ti <container_id> bash`\
-[5] run the script `script/ftp-integration/reschedule-cron.js`
+[5] run the script `node script/ftp-integration/reschedule-cron.js`
 
 
 ***
