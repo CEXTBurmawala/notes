@@ -2,6 +2,9 @@
 
 Single sign-on configuration.
 
+### metadata file to send to customer
+A metadata file is to be created with the customer's isight url added to it. This file is then sent to the customer for their IT department to work with.
+
 ### `server.env` variables
 
 ```

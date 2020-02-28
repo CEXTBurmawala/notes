@@ -1,7 +1,6 @@
 ## Make Commands
 
 Short list with descriptions of common commands used when setting up or deploying projects.
-***
 
 #### make breakdown
 Deletes all databases
