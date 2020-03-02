@@ -35,10 +35,12 @@ This repository is intended to be a notebook for work-related notes.
 - [Integration setup - Nscale](./deploy/integration_setup_nscale.md)
 - [Tmux](./deploy/tmux.md)
 - [Access Azure from home](./deploy/home_access_azure.md)
-
+	
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
 - [Migrations general](./database/migrations_general.md)
+- [Migrations picklists](./database/migrations_picklists.md)
+- [Test migrations](./database/test_migrations.md)
 - [Make commands](./database/make_commands.md)
 - [Reset password](./database/reset_password.md)
 - [Clear lockout](./database/clear_lockout.md)
@@ -53,6 +55,9 @@ This repository is intended to be a notebook for work-related notes.
 
 ## FTP
 - [Logging onto FTP](./ftp/logging_onto_ftp.md)
+
+## Yellowfin
+- [Yellowfin general](./yellowfin/yellowfin_general.md)
 
 ## Vim
 - [Vim Setup](./vim/vim_setup.md)

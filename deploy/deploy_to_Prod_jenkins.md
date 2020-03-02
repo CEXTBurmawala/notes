@@ -27,23 +27,6 @@ make setup
 make create-sample-users
 ```
 
-### POSTRUN_SCRIPT - Non-initial
-```
-
-```
-
-### YELLOWFIN ENV VARIABLES
-```
-YF_ENABLED=
-YF_URL=
-YF_URL_SVC=
-YF_USER=
-YF_PASSWORD=
-YF_ORG_ID=
-YF_ORG=
-YELLOWFIN_IP=
-YELLOWFIN_PORT=
-```
 
 ***
 [Table of Contents](../README.md)
