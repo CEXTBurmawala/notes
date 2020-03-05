@@ -35,6 +35,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Integration setup - Nscale](./deploy/integration_setup_nscale.md)
 - [Tmux](./deploy/tmux.md)
 - [Access Azure from home](./deploy/home_access_azure.md)
+- [Update app to 5.4](./deploy/update_to_54.md)
 	
 ## Database
 - [Database dump and restore](./database/db_dump_restore.md)
