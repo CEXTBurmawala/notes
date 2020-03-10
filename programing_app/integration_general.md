@@ -19,7 +19,7 @@ Notes regarding integration setup can be found here:
 #### testing integration locally
 - set these envars locally:
 	```
-	export FTP_INTEGRATION_FOLDER_PATH=/Users/flavoie/Documents/CUSTOMERS/<name>/integration
+	export FTP_INTEGRATION_FOLDER_PATH=/Users/flavoie/"OneDrive - i-Sight Software by Customer Expressions"/CUSTOMERS/<name>/integration
 	export FTP_INTEGRATION_ENTITY=person
 	export FTP_INTEGRATION_HOUR_OF_DAY=17
 	export FTP_INTEGRATION_INTERVAL=daily

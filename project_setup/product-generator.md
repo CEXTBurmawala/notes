@@ -2,9 +2,11 @@
 
 ### Install generator on local machine
 - In your `~/git/` directory, create a directory called 'product-self-service'
-- navigate to <https://github.com/i-Sight/product-self-service>
-- Clone the repo to 'product-self-service'
-- In terminal, run `yarn`
+- navigate to <https://github.com/i-Sight/isight-self-service>
+- Clone the repo to 'generator'
+- navigate into the directory `cd generator`
+- Run `nvm install`
+- Run `yarn`
 - Run `yarn link`
 - Run `product-generator --help` to ensure that the CLI tool is installed.
 
