@@ -2,6 +2,8 @@
 
 There are a few options to update an existing app from 5.3 to 5.4.0. See different options below.
 
+* IT needs a ticket to setup the upgrade for the app.
+
 #### [1] UAT + delete all data
 In UAT where no data needs to be saved, the app can be deployed with the following POSTRUN_SCRIPTS:
 ```

@@ -29,5 +29,12 @@ The Platform and Probase should have the latest patch versions and they should m
 	- Run `git add -A` and fix any conflicts that may exist.
 	- For the commit, run the following `git commit --no-edit`
 
+### [5.x apps] Upgrading to a new app version
+For example, upgrading a 5.3.1 app to 5.4.0
+
+- Follow the same steps as above.
+- Fix merge conflicts as described.
+- run `yarn` 
+
 ***
 [Table of Contents](../README.md)
