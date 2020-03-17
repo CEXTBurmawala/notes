@@ -5,6 +5,9 @@ Single sign-on configuration.
 ### metadata file to send to customer
 A metadata file is to be created with the customer's isight url added to it. This file is then sent to the customer for their IT department to work with.
 
+### [^5.4.x App] Note
+The sso configuration is already implemented in the app. Only the environment variables need to be set.
+
 ### [5.x App] SERVER_ENVARS in Jenkins
 
 In `config/form-layouts/user-details-form.js`, add the following to the elements array:
