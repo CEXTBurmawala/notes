@@ -32,10 +32,10 @@ exports.authOptions = authOptions;
 
 
 Replace the 4 variables:
-- <project_name>
-- <identity_provider>
-- <domain>
-- <cert>
+- project_name
+- identity_provider
+- domain
+- cert
 
 ```
 LOG_SSO=true
