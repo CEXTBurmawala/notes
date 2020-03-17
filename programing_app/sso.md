@@ -5,29 +5,48 @@ Single sign-on configuration.
 ### metadata file to send to customer
 A metadata file is to be created with the customer's isight url added to it. This file is then sent to the customer for their IT department to work with.
 
-### `server.env` variables
+### [5.x App] SERVER_ENVARS in Jenkins
+
+In `config/form-layouts/user-details-form.js`, add the following to the elements array:
+```
+{
+  field: 'ssoUser',
+  displayRule: 'isSSOEnabled',
+},
+```
+
+In `config/options.auth.js`, add the following:
+```
+const { set } = require('lodash');
+const OptUtil = require('isight/lib/common/OptUtil.js');
+const globalOptions = require('./options.global.js');
+
+exports.guestEnabled = globalOptions.allowExternalPages;
+
+const authOptions = OptUtil.getAuthOptions();
+set(authOptions, 'strategies.wsfed.identifierMapping', process.env.WSFED_IDENTIFIER_MAPPING || 'email');
+set(authOptions, 'strategies.wsfed.dataMapping.identifier', process.env.WSFED_IDENTIFIER || 'email');
+
+exports.authOptions = authOptions;
+```
+
+
+Replace the 4 variables:
+- <project_name>
+- <identity_provider>
+- <domain>
+- <cert>
 
 ```
-# Add the domain of SAML_WSFED_IDENTITY_PROVIDER_URL to the allowed referrers (e.g. https://shbqa.ais.edu/some.path)
-ALLOWED_REFERERS=https://<client>.i-sight.com,https://shbqa.ais.edu
-
-SAML_TYPE=saml-adfs-auth
-# SingleSignOnService HTTP-Redirect Location
-SAML_WSFED_IDENTITY_PROVIDER_URL=<IDENTITY_PROVIDER_FROM_CLIENT_FILE>
-SAMLID_USER_MAPPING=nick
-# client isight url
-SAML_WSFED_REALM=https://<client>.i-sight.com
-SAMLID_CASE_INSENSITIVE=true
-SAML_WSFED_PROTOCOL=samlp
-SAML_IDENTIFIER_MAPPING=http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier
-# X509Certificate
-SAML_WSFED_CERT=<CERTIFICATE_FROM_CLIENT_FILE>
-
-## if you're encrypting, specify env vars below
-SAML_WSFED_SIGNING_KEY_KEY_FILE=/etc/cert/i-sightuat_com.key
-SAML_WSFED_SIGNING_KEY_CERT_FILE=/etc/cert/star_i-sightuat_com.pem
-SAML_WSFED_DECRYPTION_KEY_FILE=/etc/cert/i-sightuat_com.key
+LOG_SSO=true
+SAML_TYPE=wsfed
+WSFED_AUTH_ENABLED=true
+ALLOWED_REFERERS=<project_name>.i-sightuat.com,<domain>
+WSFED_IDENTITY_PROVIDER_URL=<identity_provider>
+WSFED_REALM=https://<project_name>.i-sightuat.com
+WSFED_CERT=<cert>
 ```
+
 ### Create logs in Containers before testing out SSO
 - Docker exe into container: `docker exec -it <container_id> bash`
 - console log the `profile` object in `node_modules/isight/lib/api/saml-adfs-auth.js` & `node_modules/isight/lib/api/saml-auth.js`
@@ -36,8 +55,10 @@ SAML_WSFED_DECRYPTION_KEY_FILE=/etc/cert/i-sightuat_com.key
 
 ### References
 
+- [local testing](https://i-sight.atlassian.net/wiki/spaces/DKB/pages/696025112/Testing+SSO+Locally)
 - [atlassian documentation](https://i-sight.atlassian.net/wiki/spaces/DTG/pages/108989269/SSO+Documentation)
 - [Sample SSO config](https://github.com/i-Sight/config_umd_v5/commit/55435b5d2d17f712625f2f1fe2f4e4b5676e7992)
+- [Nnamdi's notes](https://github.com/CEXNIbe/ReadMe/wiki/SSO-Setup)
 
 
 ***
