@@ -6,13 +6,13 @@ In order to change a field type from a textarea or textbox to a picklist, follow
 In the file `entities/case/index.js` revise the picklist type:
 ```
 {     
-	field: '<field_name>',
-	type: 'picklist',
-	caption: '<field_name>',
-	typeOptions: {
-		picklistName: '<picklist_name>'
-	},
-	kind: 'editable'
+  field: '<field_name>',
+  type: 'picklist',
+  caption: '<field_name>',
+  typeOptions: {
+    picklistName: '<picklist_name>'
+  },
+  kind: 'editable'
 },
 ```
 
@@ -20,8 +20,8 @@ In the file `entities/case/index.js` revise the picklist type:
 In the file `config/options.picklists.js` add the new picklist name
 ```
 '<picklist_name>': {
-	text: 'value',
-	value: 'value'
+  text: 'value',
+  value: 'value'
 },
 ```
 
@@ -29,11 +29,11 @@ In the file `config/options.picklists.js` add the new picklist name
 Add picklist data file: `data/lists/<picklist_name>.json`
 ```
 [
-	{
-		"name": "<picklist_name>",
-		"value": "<picklists_value>"
-	},
-	...
+  {
+    "name": "<picklist_name>",
+    "value": "<picklists_value>"
+  },
+  ...
 ]
 ```
 
