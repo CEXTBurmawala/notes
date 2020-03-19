@@ -5,14 +5,14 @@ It is good practice to `make build` the night before the push, and then `make de
 ### Deployment process [Azure]
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE006`
-	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
+  - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
 - Clone the nscale config master branch into the project folder <https://github.com/i-Sight/nscale-config>
 - Run `make setup`
 - See Nnamdi's notes for an example of all the changes that need to be changed <https://github.com/CEXNIbe/ReadMe/wiki/Azure-NScale-Version-1-Setup>
-	- Edit 'sys-config.json' file with the proper name, namespace and id in the system object. The 'id' needs to be a unique id. Search online for UUID generator and use a newly generated id.
-	- Edit the server tag in the server object and update the path to the github repository.
+  - Edit 'sys-config.json' file with the proper name, namespace and id in the system object. The 'id' needs to be a unique id. Search online for UUID generator and use a newly generated id.
+  - Edit the server tag in the server object and update the path to the github repository.
 - After editing the file, quit out of the two vim windows which brings you to 'config.js'
-	- Paste in the two lines from Nnamdi's notes
+  - Paste in the two lines from Nnamdi's notes
 - Next, run `vim makefile` and change the 'ENV' field to 'Prod'
 - Run `make validate`
 - Run `nscacle system list`
@@ -20,9 +20,9 @@ It is good practice to `make build` the night before the push, and then `make de
 - Run `nscacle system list` and now we should see the app at the end of the list
 - Run `make compile`
 - Copy the keys from another project in the `cp -R ../<old_project_name>/workspace/config_<old_project_name>_v5/keys/ ./workspace/config_<project_name>_v5/keys` 
-	- Create a temp directory (see Nnamdi's notes) and run the commands after changing the variables in the names. Run the first 3 first, then the second 3.
-	- Run `cd ../` and run `ls` to ee that the files were copied.
-	- Once done, delete the temp directory
+  - Create a temp directory (see Nnamdi's notes) and run the commands after changing the variables in the names. Run the first 3 first, then the second 3.
+  - Run `cd ../` and run `ls` to ee that the files were copied.
+  - Once done, delete the temp directory
 - Now edit the 'sever.env' file
 - Run `df -h` to ensure there is enough space on nscale
 - Run `make build`
@@ -39,7 +39,7 @@ It is good practice to `make build` the night before the push, and then `make de
 ### Re-deployment [Azure]
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE006`
-	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
+  - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
 - Navigate to the project directory `cd deploy/<project_name>`
 - Check how much space there is left, run `df -h` (confirm enough space available)
 - Run `vim sys-config.json` and change the version number to match the one in the project (and github master)
@@ -55,17 +55,17 @@ It is good practice to `make build` the night before the push, and then `make de
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
 - Run `docker ps` to verify that the containers are all running
-	- Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
-	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
-	- Run `./container-run.sh make sync-translations` [OPTIONAL]
-	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
+  - Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
+  - Run `./container-run.sh make sync-picklists` [OPTIONAL]
+  - Run `./container-run.sh make sync-translations` [OPTIONAL]
+  - Run `./container-run.sh make sync-picklists` [OPTIONAL]
 - Navigate to project url (<project_name>.isight.com)
 
 ### Re-deployment [AWS]
 - To log into bastion1, run `ssh -i key_name cex_user_name@ec2-34-214-84-10.us-west-2.compute.amazonaws.com`
-	- A bash alias called `aws` runs the above command with the username
+  - A bash alias called `aws` runs the above command with the username
 - To log into 'Nscale Prod', run `ssh cexnscaleprodadmin@ip-172-31-28-140.us-west-2.compute.internal`
-	- The password can be found on pleasant under Root > Pro > Environments > AWS > PAT/PRD/UAT > 'Nscale Stage'
+  - The password can be found on pleasant under Root > Pro > Environments > AWS > PAT/PRD/UAT > 'Nscale Stage'
 
 
 ***

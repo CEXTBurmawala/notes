@@ -14,9 +14,9 @@
 
 ### Re-deployment [Azure]
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
-	- A bash alias called `azure` runs the above command with the username
+  - A bash alias called `azure` runs the above command with the username
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE002`
-	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
+  - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
 - Navigate to the project directory `cd deploy/<project_name>`
 - Check how much space there is left, run `df -h` (confirm enough space available)
 - Run `vim sys-config.json` and change the version number to match the one in the project (and github master)
@@ -31,18 +31,18 @@
 After deploying:
 - Go into service box, run `make ssh`
 - Run `docker ps` to verify that the containers are all running
-	- Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
-	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
-	- Run `./container-run.sh make sync-translations` [OPTIONAL]
-	- Run `./container-run.sh make sync-picklists` [OPTIONAL]
+  - Run `./container-run.sh make migrate DISABLE_DB_BACKUP=true`
+  - Run `./container-run.sh make sync-picklists` [OPTIONAL]
+  - Run `./container-run.sh make sync-translations` [OPTIONAL]
+  - Run `./container-run.sh make sync-picklists` [OPTIONAL]
 - Navigate to project url `<project_name>.i-sightuat.com`
 ***
 
 ### Re-deployment [AWS]
 - To log into bastion1, run `ssh -i key_name cex_user_name@ec2-34-214-84-10.us-west-2.compute.amazonaws.com`
-	- A bash alias called `aws` runs the above command with the username
+  - A bash alias called `aws` runs the above command with the username
 - To log into 'Nscale', run `ssh cexnscaleadmin@ip-172-31-38-173.us-west-2.compute.internal`
-	- The password can be found on pleasant under Root > Pro > Environments > AWS > PAT/PRD/UAT > 'Nscale Stage'
+  - The password can be found on pleasant under Root > Pro > Environments > AWS > PAT/PRD/UAT > 'Nscale Stage'
 - Navigate to the project directory `cd deploy/<project_name>`
 - Check how much space there is left, run `df -h` (confirm enough space available)
 - Run `vim sys-config.json` and change the version number to match the one in the project (and github master)

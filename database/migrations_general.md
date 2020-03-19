@@ -15,8 +15,8 @@ To run migration scripts:
 
 #### Notes
 - If the migration script doesn't work as intended, the migration needs to be removed from the 'schemaversion'
-	- run `select * from schemaversion;`
-	- the run `delete from schemaversion  where version='<number>';` type the number that you want to delete from the schema.
+  - run `select * from schemaversion;`
+  - the run `delete from schemaversion  where version='<number>';` type the number that you want to delete from the schema.
 
 
 ***

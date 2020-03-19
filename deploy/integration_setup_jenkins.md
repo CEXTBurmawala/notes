@@ -30,9 +30,9 @@ export FTP_INTEGRATION_DAY_OF_WEEK=1
 #### [1] In the database box
 - navigate into the integration folder by running `cd /var/isight/integration/`
 - run `ls isight_backup` to confirm CSV file is there
-	- if not, add csv data by creating a file and copy/pasting or upload a sample file
+  - if not, add csv data by creating a file and copy/pasting or upload a sample file
 - if file is in `isight_backup` directory, move it to parent directory
-	- run `mv isight_backup/<file_name>.csv .`
+  - run `mv isight_backup/<file_name>.csv .`
 
 #### [2] In the service box
 - run `docker ps` and copy the container_id of the `isight_server.1...`

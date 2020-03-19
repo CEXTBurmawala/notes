@@ -1,9 +1,9 @@
 ## Change mail host
 
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
-	- A bash alias called `azure` runs the above command with the username
+  - A bash alias called `azure` runs the above command with the username
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE002`
-	- The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
+  - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
 - Navigate to the project directory `cd deploy/<project_name>`
 - Go into service box, run `make ssh`
 - Run `vim server.env` and change the following line: `MAIL_HOST=10.20.148.6`

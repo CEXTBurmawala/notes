@@ -4,7 +4,7 @@ In order to speed up testing the integration, an sql script can be written to ma
 
 - Create an sql script to update the mapping fields in the `sys_integration_mapping` table in postgres. A sample of sql scripts can be found in `~/Documents/devTools/sample_sql_scripts`.
 - In the postgres database, `isight`, run the script by running this command:
-	`UPDATE sys_integration_mapping SET specification='<mapping_JSON_data>'`
+  `UPDATE sys_integration_mapping SET specification='<mapping_JSON_data>'`
 
 
 ***

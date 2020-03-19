@@ -9,13 +9,13 @@ Open Word document from IT ticket for the project. It can be found in your email
 - click on `<name>-uat-deploy-v1.0`
 - click on 'Build with Parameters' from left navigation pane
 - Fill in these fields:
-	- SAFETY_CHECK: The 'DBASE' INTERNAL IP address (from Word doc)
-	- DESCRIPTION: Provide description ex: Initial deploy
-	- GIT_TAG: provide tag for release version (ex. v1.0.0)
-	- BYPASSS_TAG: un-check box (if tag already exists on github, check the box).
-	- GIT_BRANCH: Set this to 'master'. 
-	- TASK: 'Other'
-	- POSTRUN_SCRIPT: See notes below
+  - SAFETY_CHECK: The 'DBASE' INTERNAL IP address (from Word doc)
+  - DESCRIPTION: Provide description ex: Initial deploy
+  - GIT_TAG: provide tag for release version (ex. v1.0.0)
+  - BYPASSS_TAG: un-check box (if tag already exists on github, check the box).
+  - GIT_BRANCH: Set this to 'master'. 
+  - TASK: 'Other'
+  - POSTRUN_SCRIPT: See notes below
 - Click 'Build' once all information is inputted.
 - Click on project name in the path banner
 - Click on `<project_name>-uat-deploy-<version>` tab to see deploy progress.

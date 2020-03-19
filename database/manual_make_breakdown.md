@@ -4,13 +4,13 @@ Follow the steps outlined here to manually perform `make breakdown`.
 
 The following databases need to be deleted:
 ```
-	$(MAKE) db-delete $(DB_ENV)
-	$(MAKE) db-delete $(AUDIT_DB_ENV)
-	$(MAKE) db-delete $(FILESTORE_DB_ENV)
-	$(MAKE) db-delete $(QUARTZ_DB_ENV)
-	$(MAKE) es-delete-indices
-	$(MAKE) remove-queues;
-	$(MAKE) cache-clean;
+  $(MAKE) db-delete $(DB_ENV)
+  $(MAKE) db-delete $(AUDIT_DB_ENV)
+  $(MAKE) db-delete $(FILESTORE_DB_ENV)
+  $(MAKE) db-delete $(QUARTZ_DB_ENV)
+  $(MAKE) es-delete-indices
+  $(MAKE) remove-queues;
+  $(MAKE) cache-clean;
 ```
 
 Note: the `cache_clean` is the redis database.
@@ -18,7 +18,7 @@ Note: the `cache_clean` is the redis database.
 
 ### [1] Delete the postgres databases
 - In Jenkins, build the db box in teleport
-	<https://orchestration02.i-sight.com/job/team-pro/job/non-prod/job/Teleport-OpenSSHSession/>
+  <https://orchestration02.i-sight.com/job/team-pro/job/non-prod/job/Teleport-OpenSSHSession/>
 - Log into teleport
 - Run `docker ps` to see the container ID for the postgres container
 - Run `docker exec -ti <container_id> bash`

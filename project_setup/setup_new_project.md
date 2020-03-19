@@ -10,62 +10,62 @@
 
 ### Setup project directory on local machine (if new project)
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
-	- See **[this](./setup_new_platform_locally.md)** page for instruction on getting the correct platform version setup.
+  - See **[this](./setup_new_platform_locally.md)** page for instruction on getting the correct platform version setup.
 - Create a directory for the customer in `~/git/config_<name>_v5` directory with the same name as the git repo.
 - clone the pro base from <https://github.com/i-Sight/config_pro_base_v5> to the new project directory.
 - Once cloned, `cd` into the project directory and change the remote repository to point to the new repo created for the project by running `git remote set-url origin git@github.com:i-Sight/config_<name>_v5.git`. This sets the 'origin' to the new project repo.
 - Add the 'pro base' as 'base' in order to pull updates if required later on by running `git remote add base git@github.com:i-Sight/config_pro_base_v5.git`
 - Run `git remote -v` to double check that the 'origin' and 'base' are set right.
 - Open the project directory in VSCode and make the following changes to the 'package.json' file:
-	- Change all instances of 'base' in the file to <project_name>
-	- Change the version number to '1.0.0'
+  - Change all instances of 'base' in the file to <project_name>
+  - Change the version number to '1.0.0'
 - The changes can now be pushed to the github repository:
-	- `git checkout -b develop` to create the develop branch,
-	- `git add .` to add all changes,
-	- `git commit -m "Initial commit"` to make the initial commit,
-	- `git push -u origin develop` to push the work to github.
-	the default branch will now be 'develop'.
+  - `git checkout -b develop` to create the develop branch,
+  - `git add .` to add all changes,
+  - `git commit -m "Initial commit"` to make the initial commit,
+  - `git push -u origin develop` to push the work to github.
+  the default branch will now be 'develop'.
 - Create the master branch and push it to github as well.
 - Delete <v5.x.x> branch.
 - Checkout the develop branch and create a new working branch called 'PROBUILD-###'.
 - There should now be 3 branches:
-	- PROBUILD-###
-	- develop
-	- master
+  - PROBUILD-###
+  - develop
+  - master
 - In both the platform and project directories:
-	- Run `nvm use` to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
+  - Run `nvm use` to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
 - In platform directory:
-	- Run `yarn`
-	- Run `yarn link`
-	- Run `make docker-up`
+  - Run `yarn`
+  - Run `yarn link`
+  - Run `make docker-up`
 - In project directory:
-	- Run `yarn link isight`
-	- Run `make install` (which will perform the following actions: `yarn`, `make build`, `make breakdown`, `make setup` and `make create-sample-users`)
+  - Run `yarn link isight`
+  - Run `make install` (which will perform the following actions: `yarn`, `make build`, `make breakdown`, `make setup` and `make create-sample-users`)
 
 ### Setup project directory on local machine (if existing project)
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
-	- See **[this](./setup_new_platform_locally.md)** page for instruction on getting the correct platform version setup.
+  - See **[this](./setup_new_platform_locally.md)** page for instruction on getting the correct platform version setup.
 - Create a directory for the customer in `~/git/config_<name>_v5` directory with the same name as the git repo.
 - Find repo on the i-sight github page `github.com/i-Sight/config_<name>_v5` and clone the 'develop' branch into the project directory.
 - Create a new branch before starting to work on the project.
 - In both the platform and project directories:
-	- Run `nvm use` to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
+  - Run `nvm use` to set the node version to be used. (this will check the .nvmrc file and use the correct node version)
 - In platform directory:
-	- Run `yarn`
-	- Run `yarn link`
-	- Run `make docker-up`
+  - Run `yarn`
+  - Run `yarn link`
+  - Run `make docker-up`
 - In project directory:
-	- Run `yarn`
-	- Run `yarn link isight`
-	- Run a dev setup (if required) `make breakdown && make setup && make create-sample-users`
+  - Run `yarn`
+  - Run `yarn link isight`
+  - Run a dev setup (if required) `make breakdown && make setup && make create-sample-users`
 
 ### Start up project
 - In one terminal window:
-	- Navigate to the project directory `~/git/config_<name>_v5`
-	- Run `make watch`
+  - Navigate to the project directory `~/git/config_<name>_v5`
+  - Run `make watch`
 - In another terminal window:
-	- Navigate to the project directory `~/git/config_<name>_v5`
-	- Run `node server.js`
+  - Navigate to the project directory `~/git/config_<name>_v5`
+  - Run `node server.js`
 - Navigate to <http://localhost:8000> in the browser.
 
 ### Potential issue
