@@ -36,7 +36,7 @@ Integration allows the customer to integrate information (profiles) into their a
 - At the scheduled time (i.e. 1 hours after IT scheduled cronjob) the cronjob in the service box will spin up a specific container which mounts the volume and then runs the import script inside the container.
 
 #### Run the integration import script
-- in the service box, run the following: `./container-run.sh node script/import-integration-parties/index.js > /dev/null`
+- in the service box, run the following: `./container-run.sh node script/import-integration-parties/index.js`
 
 ***
 [Table of Contents](../README.md)
