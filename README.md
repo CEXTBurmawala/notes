@@ -35,16 +35,17 @@ This repository is intended to be a notebook for work-related notes.
 ## FTP
 - [Logging onto FTP](./ftp/logging_onto_ftp.md)
 
-## Programming in the App
+## Programming the App
 - [Adding sub section](./programing_app/adding_sub_section.md)
 - [Configure SSO](./programing_app/sso.md)
-- [Change Cron Schedule](./programing_app/change_cron_schedule.md)
+- [Change case numbering](./programing_app/change_case_numbering.md)
+- [Change cron schedule](./programing_app/change_cron_schedule.md)
 - [Change field type](./programing_app/change_field_type.md)
 - [Extend platform file](./programing_app/extend_platform_file.md)
 - [External 400 Error](./programing_app/external_400_error.md)
-- [External Capture Modal](./programing_app/external_capture_modal.md)
-- [External Capture On/Off](./programing_app/external_capture.md)
-- [Fall 2019 Patch Vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
+- [External capture modal](./programing_app/external_capture_modal.md)
+- [External capture nn/off](./programing_app/external_capture.md)
+- [Fall 2019 patch vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 - [Integration general](./programing_app/integration_general.md)
 - [Integration mapping](./programing_app/integration_mapping.md)
 - [Suggested Links](./programing_app/suggested_links.md)
