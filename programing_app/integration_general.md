@@ -58,15 +58,8 @@ the entity for the new table.
 - run `node script/import-integration-parties/index.js` in order to import the rows from the csv file
 into the app.
 
-#### Test migration locally
-- Checkout the previous release (git fetch / git checkout v#.#.#)
-- Run a dev setup
-- Checkout your feature branch
-- Run `make migrate` and ensure that the scripts ran successfully.
-- run `make sync-translations`
-- Test the app locally to confirm that the integration still works.
-
-#### if changes required to mapping
+#### If changes required to mapping
+- make changes to the mapping file
 - delete all 'employee' related files
 - re-run `node script/import-integration-parties/generate-entity-files.js`
 
