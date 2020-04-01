@@ -2,6 +2,28 @@
 
 Short list with descriptions of common commands used when setting up or deploying projects.
 
+#### make auto-migrate
+`make auto-migrate` is a command in the pro base Makefile intended to facilitate migrating changes to the app when deploying a newer version of the app.
+
+These are the commands that are run:
+```
+auto-migrate:
+	$(MAKE) -C $(PLATFORM_PATH) backup
+	$(MAKE) -C $(PLATFORM_PATH) remove-views
+	$(MAKE) -C $(PLATFORM_PATH) db-migrate
+	$(MAKE) -C $(PLATFORM_PATH) sync-data-dictionary
+	node script/database/auto-migrate.js default
+	node script/database/scrub-data-dictionary.js default
+	$(MAKE) -C $(PLATFORM_PATH) create-database-views
+	$(MAKE) -C $(PLATFORM_PATH) sync-options
+	$(MAKE) -C $(PLATFORM_PATH) sync-translations
+	$(MAKE) -C $(PLATFORM_PATH) es-reindex-data
+	$(MAKE) -C $(PLATFORM_PATH) create-queues
+```
+
+- `auto-migrate.js`: This script will automatically add/remove tables and columns
+- `scrub-data-dictionary`: This script removes fields from the entity stored in the database
+
 #### make breakdown
 Deletes all databases
 
