@@ -1,4 +1,4 @@
-## Adding Sub Section
+## Add Sub Section
 
 Adding a section in the details tab of the case view. The 'Overview' and 'Related Cases' sub sections are defaults and other sub sections can be added next to them.
 

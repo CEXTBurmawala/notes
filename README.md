@@ -36,7 +36,8 @@ This repository is intended to be a notebook for work-related notes.
 - [Logging onto FTP](./ftp/logging_onto_ftp.md)
 
 ## Programming the App
-- [Adding sub section](./programing_app/adding_sub_section.md)
+- [Add sub section](./programing_app/adding_sub_section.md)
+- [Add file upload on external](./programing_app/add_file_upload_external.md)
 - [Configure SSO](./programing_app/sso.md)
 - [Change case numbering](./programing_app/change_case_numbering.md)
 - [Change cron schedule](./programing_app/change_cron_schedule.md)
