@@ -30,6 +30,7 @@ make sync-translations
 make schedule-usage-stats-calculation
 make es-reindex-data
 make -C node_modules/isight sync-queues
+make sync-permissions
 ```
 
 #### 5.4 Release notes
