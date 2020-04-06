@@ -112,8 +112,6 @@ ORDER BY
 ### Export translations
 - In the app code base, add a file called `script/translate-yf.js` and paste the following code in it:
 ```
-/* eslint-disable func-names */
-/* eslint-disable prefer-arrow-callback */
 /* eslint-disable no-console */
 const _ = require('lodash');
 const fs = require('fs');
@@ -124,53 +122,53 @@ const outputData = [];
 const missingData = [];
 
 if (process.argv.length < 3) {
-  console.log('ex. node script/translate-yf.js <input_file> <language>');
-  process.exit(0);
+	console.log('ex. node script/translate-yf.js <input_file> <language>');
+	process.exit(0);
 }
 
 const input = process.argv[2];
 const locale = process.argv[3] || 'en_US';
 
 knex('sys_translation')
-  .select('value', 'key')
-  .where('locale', locale)
-  .then(function (translations) {
-    new reader.DataReader(input, { encoding: 'utf8' })
-      .on('error', function (error) {
-        console.log(error);
-      })
-      .on('line', function (row) {
-        const rowData = row.split(',');
-        const field = rowData.length >= 4 ? rowData[3] : null;
-        const isValid = rowData && rowData[1] === 'VIEWFIELDNAME'
-        && field && field.indexOf(' ') === -1 && !/[A-Z]/.test(field[0]);
-        if (isValid) {
-          const translation = _.result(_.find(translations, t => t.key === _.camelCase(field).toLowerCase()), 'value');
-          if (translation) {
-            if (rowData.length >= 5) {
-              rowData[4] = `"${translation}"`;
-            } else {
-              rowData.push(`"${translation}"`);
-            }
-          } else {
-            missingData.push(field);
-          }
-        }
-        outputData.push(rowData);
-      })
-      .on('end', function () {
-        const stream = fs.createWriteStream(input);
-        stream.once('open', function () {
-          _.each(outputData, function (line) {
-            stream.write(`${line.join()}\n`);
-          });
-          stream.end();
-        });
-        console.log(' >>', input, 'updated.');
-        console.log('No translations were found for the following fields:\n', missingData.join(', '));
-      })
-      .read();
-  });
+	.select('value', 'key')
+	.where('locale', locale)
+	.then((translations) => {
+		new reader.DataReader(input, { encoding: 'utf8' })
+			.on('error', (error) => {
+				console.log(error);
+			})
+			.on('line', (row) => {
+				const rowData = row.split(',');
+				const field = rowData.length >= 4 ? rowData[3] : null;
+				const isValid = rowData && rowData[1] === 'VIEWFIELDNAME'
+				&& field && field.indexOf(' ') === -1 && !/[A-Z]/.test(field[0]);
+				if (isValid) {
+					const translation = _.result(_.find(translations, t => t.key === _.camelCase(field).toLowerCase()), 'value');
+					if (translation) {
+						if (rowData.length >= 5) {
+							rowData[4] = `"${translation}"`;
+						} else {
+							rowData.push(`"${translation}"`);
+						}
+					} else {
+						missingData.push(field);
+					}
+				}
+				outputData.push(rowData);
+			})
+			.on('end', () => {
+				const stream = fs.createWriteStream(input);
+				stream.once('open', () => {
+					_.each(outputData, (line) => {
+						stream.write(`${line.join()}\n`);
+					});
+					stream.end();
+				});
+				console.log(' >>', input, 'updated.');
+				console.log('No translations were found for the following fields:\n', missingData.join(', '));
+			})
+			.read();
+	});
 
 ```
 - Run the file with this command `node script/translate-yf.js <path_to_translation_file>.csv`
