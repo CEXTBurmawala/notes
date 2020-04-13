@@ -8,31 +8,7 @@ A metadata file is to be created with the customer's isight url added to it. Thi
 ### [^5.4.x App] Note
 The sso configuration is already implemented in the app. Only the environment variables need to be set.
 
-### [5.x App] SERVER_ENVARS in Jenkins
-
-In `config/form-layouts/user-details-form.js`, add the following to the elements array:
-```
-{
-  field: 'ssoUser',
-  displayRule: 'isSSOEnabled',
-},
-```
-
-In `config/options.auth.js`, add the following:
-```
-const { set } = require('lodash');
-const OptUtil = require('isight/lib/common/OptUtil.js');
-const globalOptions = require('./options.global.js');
-
-exports.guestEnabled = globalOptions.allowExternalPages;
-
-const authOptions = OptUtil.getAuthOptions();
-set(authOptions, 'strategies.wsfed.identifierMapping', process.env.WSFED_IDENTIFIER_MAPPING || 'email');
-set(authOptions, 'strategies.wsfed.dataMapping.identifier', process.env.WSFED_IDENTIFIER || 'email');
-
-exports.authOptions = authOptions;
-```
-
+### [5.4.x App] SERVER_ENVARS in Jenkins
 
 Replace the 4 variables:
 - project_name
@@ -49,12 +25,6 @@ WSFED_IDENTITY_PROVIDER_URL=<identity_provider>
 WSFED_REALM=https://<project_name>.i-sightuat.com
 WSFED_CERT=<cert>
 ```
-
-### Create logs in Containers before testing out SSO
-- Docker exe into container: `docker exec -it <container_id> bash`
-- console log the `profile` object in `node_modules/isight/lib/api/saml-adfs-auth.js` & `node_modules/isight/lib/api/saml-auth.js`
-- Exit container and commit changes: `docker commit <container_id> <new_container_image_name>`
-- run `.start-server-container`
 
 ### References
 
