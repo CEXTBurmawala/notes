@@ -14,7 +14,7 @@ project_name
 - This is the project name from the url
 
 identity_provider
-- Find the `SingleSignOnService` tag and copy the `location` variable which should be a URL that ends in SAML.
+- Find the `SingleSignOnService` tag and copy the `location` variable which should be a URL. This should always be the one with `HTTP-Redirect` in the `binding` tag.
 
 domain
 - This can be be multiple domains.
