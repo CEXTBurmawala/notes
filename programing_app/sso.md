@@ -10,11 +10,19 @@ The sso configuration is already implemented in the app. Only the environment va
 
 ### [5.4.x App] SERVER_ENVARS in Jenkins
 
-Replace the 4 variables:
-- project_name
-- identity_provider
-- domain
-- cert
+project_name
+- This is the project name from the url
+
+identity_provider
+- Find the `SingleSignOnService` tag and copy the `location` variable which should be a URL that ends in SAML.
+
+domain
+- This can be be multiple domains.
+- Add the `entityID` URL from the `EntityDescriptor` tag. Only add the base URL
+- Add the base URL from the identity_provider URL.
+
+cert
+- This is the `X509Certificate` where it says `<KeyDescriptor use="signing">`
 
 ```
 LOG_SSO=true
