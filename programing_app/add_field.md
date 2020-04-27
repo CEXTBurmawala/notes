@@ -1,4 +1,4 @@
-## Change Field Type
+## Add Field Type
 
 In order to add a field to case/party/entity, follow the steps below. If the field adds a picklist, see the notes [HERE](./change_field_type.md) to add the picklists to the app.
 
