@@ -17,6 +17,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Access Azure from home](./deploy/home_access_azure.md)
 - [Accessing Azure](./deploy/access_azure.md)
 - [Change mail host](./deploy/change_mail_host.md)
+- [Fix container restart failure - Nscale](./deploy/container_restart_failure.md)
 - [Deploy to Prod - Jenkins](./deploy/deploy_to_Prod_jenkins.md)
 - [Deploy to Prod - Nscale](./deploy/deploy_to_Prod_nscale.md)
 - [Deploy to UAT - Jenkins](./deploy/deploy_to_UAT_jenkins.md)
