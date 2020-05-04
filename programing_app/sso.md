@@ -46,6 +46,14 @@ WSFED_REALM=https://<project_name>.i-sightuat.com
 WSFED_CERT=<cert>
 ```
 
+### Changing binding variable to userID
+- get customer to attempt login in order to get the variable name tied to the userID they are sending by looking up the profile object in the server logs.
+- In Jenkins, add the following two envars:
+```
+WSFED_IDENTIFIER=<variable_from_logs>
+WSFED_IDENTIFIER_MAPPING=nick
+```
+
 ### Checking Logs
 - log into the database box
 - run `docker service ls` and take note of the service-worker boxes

@@ -18,11 +18,11 @@ Link to [Integration General](../programing_app/integration_general.md)
 
 These variables need to be added to the `SERVER_ENVARS` section of the build parameters:
 ```
-export FTP_INTEGRATION_FOLDER_PATH=/usr/local/data/integration
-export FTP_INTEGRATION_ENTITY=person
-export FTP_INTEGRATION_HOUR_OF_DAY=17
-export FTP_INTEGRATION_INTERVAL=weekly
-export FTP_INTEGRATION_DAY_OF_WEEK=1
+FTP_INTEGRATION_FOLDER_PATH=/usr/local/data/integration
+FTP_INTEGRATION_ENTITY=person
+FTP_INTEGRATION_HOUR_OF_DAY=17
+FTP_INTEGRATION_INTERVAL=weekly
+FTP_INTEGRATION_DAY_OF_WEEK=1
 ```
 
 ### STEPS
@@ -53,6 +53,9 @@ While still inside the docker container
 - after integration scripts have been run, go back to the app and click on "profiles" and check
 that the data has been imported.
 
+
+### Logs
+In order to check the integration logs when you don't have access to log into the app, log into the database and make queries to the `sys_event` table.
 
 ***
 [Table of Contents](../README.md)
