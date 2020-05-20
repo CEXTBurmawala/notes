@@ -27,6 +27,11 @@ make setup
 make create-sample-users
 ```
 
+### Final prod push
+Once prod is finalized and ready to go to support and the customer starts using the app, the following steps need to be carried out:
+- Remove the isight2 account in the database by running the following sql command: `UPDATE sys_user SET deleted_date=now(), sys_active=false WHERE nick='isight2';`
+- Update the isight account password to `C3xlabadmin!`
+
 
 ***
 [Table of Contents](../README.md)

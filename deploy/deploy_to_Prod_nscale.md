@@ -2,6 +2,11 @@
 
 It is good practice to `make build` the night before the push, and then `make deploy` in the morning during the prod push window.
 
+### Final prod push
+Once prod is finalized and ready to go to support and the customer starts using the app, the following steps need to be carried out:
+- Remove the isight2 account in the database by running the following sql command: `UPDATE sys_user SET deleted_date=now(), sys_active=false WHERE nick='isight2';`
+- Update the isight account password to `C3xlabadmin!`
+
 ### Deployment process [Azure]
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE006`
