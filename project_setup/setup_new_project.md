@@ -23,11 +23,10 @@
   - `git checkout -b develop` to create the develop branch,
   - `git add .` to add all changes,
   - `git commit -m "Initial commit"` to make the initial commit,
-  - `git push -u origin develop` to push the work to github.
-  the default branch will now be 'develop'.
+  - `git push origin develop` to push the work to github. The default branch will now be 'develop'.
 - Create the master branch and push it to github as well.
 - Delete <v5.x.x> branch.
-- Checkout the develop branch and create a new working branch called 'PROBUILD-###'.
+- Checkout the master branch and create a new working branch called 'PROBUILD-###'.
 - There should now be 3 branches:
   - PROBUILD-###
   - develop
