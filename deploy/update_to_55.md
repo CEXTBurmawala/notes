@@ -34,6 +34,6 @@ make es-reindex-data
 ```
 
 #### 5.4 Release notes
-Find release notes [here](https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/687276216/v5.4.0+-+Release+Notes#v5.4.0-ReleaseNotes-FixTasks)
+Find release notes [here](https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/859209744/v5.5.0+-+Release+Notes)
 ***
 [Table of Contents](../README.md)
