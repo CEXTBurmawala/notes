@@ -31,6 +31,7 @@ make -C node_modules/isight es-create-scripts
 make sync-queues
 make update-phone-number-format
 make es-reindex-data
+make sync-queues
 ```
 
 #### 5.4 Release notes

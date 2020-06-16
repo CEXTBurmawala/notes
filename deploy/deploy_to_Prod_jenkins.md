@@ -27,6 +27,13 @@ make setup
 make create-sample-users
 ```
 
+### Usage Dashboard
+- Enable the usage dashboard. Copy a previous sql script and revise the year and month of deployment as well as the number of seats and capacity.
+
+### Yellowfin
+- Once an app is deployed to Prod, the yellowfin reporting should be setup.
+- Once done, redeploy the app with the yellowfin envars. 
+
 ### Final prod push
 Once prod is finalized and ready to go to support and the customer starts using the app, the following steps need to be carried out:
 - Remove the isight2 account in the database by running the following sql command: `UPDATE sys_user SET deleted_date=now(), sys_active=false WHERE nick='isight2';`
