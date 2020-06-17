@@ -1,6 +1,8 @@
 ## Relative Fields Backend
 
-To make fields dynamically 
+To make fields dynamically generated in both the frontend & the backend, the field kind needs to be 'computed' with kindOptions set to computeFunction with the name of the function. Then a `compute-function.js` file needs to be created in the entity folder. This file contains functions that will calculated/generate field content before being saved to the database.
+
+If the fields need to be dynamically set on the frontend as the user inputs data, the view also needs to have functions that set values based on other fields changing.
 
 
 [Example code](https://github.com/i-Sight/config_ubc_v5/pull/1)
