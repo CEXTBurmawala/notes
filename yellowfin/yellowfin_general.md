@@ -175,7 +175,7 @@ knex('sys_translation')
 - Then upload the file to yellowfin
 
 #### Yellowfin variables in Jenkins
-The config envars are to be added once yellowfin is setup.
+The config envars are to be added once yellowfin is setup to both `COMPOSE_ENVARS` and `SERVER_ENVARS`
 
 ```
 YF_ENABLED=true
