@@ -30,6 +30,13 @@ make create-sample-users
 ### Usage Dashboard
 - Enable the usage dashboard. Copy a previous sql script and revise the year and month of deployment as well as the number of seats and capacity.
 
+USAGE_START_YEAR:0000
+USAGE_START_MONTH:00
+USAGE_SEAT_LIMIT:5
+USAGE_STORAGE_LIMIT:10
+
+See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b4331dff0ed84de35bb646a/script/generate/usage-rule.js) for documentation for usage rule.
+
 ### Yellowfin
 - Once an app is deployed to Prod, the yellowfin reporting should be setup.
 - Once done, redeploy the app with the yellowfin envars. 
