@@ -35,7 +35,7 @@ USAGE_START_MONTH:00 \
 USAGE_SEAT_LIMIT:5 \
 USAGE_STORAGE_LIMIT:10
 
-See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b4331dff0ed84de35bb646a/script/generate/usage-rule.js) for documentation for usage rule.
+See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b4331dff0ed84de35bb646a/script/generate/usage-rule.js) and [here](https://github.com/i-Sight/config_pro_base_v5/wiki/Populate-Usage-Rule) for documentation for usage rule.
 
 ### Yellowfin
 - Once an app is deployed to Prod, the yellowfin reporting should be setup.
