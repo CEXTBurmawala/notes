@@ -11,7 +11,7 @@ If the app is already deployed and cannot be broken down, the following changes 
 
 [1] Get the permission id from the sys_permissions table `select * from sys_permission where code='upload_file';`
 
-[2] Get the user role id from the sys_user_role table `select * from sys_user_role;`
+[2] Get the user role id from the sys_user_role table `select * from sys_user_role where name='Anonymous';`
 
 [3] Run the following command inserting the permission_id, user_role_id & new_uuid:
 ```
@@ -20,7 +20,7 @@ VALUES
 (E'<permission_id>',E'<user_role_id>',NULL,NULL,FALSE,NULL,FALSE,FALSE,NULL,NULL,NULL,NULL,TRUE,TRUE,NULL,NULL,E'2020-07-09 13:06:39.251+00',NULL,E'2020-07-09 13:06:37.99+00',E'0',E'<new_uuid>');
 ```
 
-[4] To verify that the role has been added, run `select * from sys_role_permission where user_role_id='<user_role_id>';`
+[4] To verify that the role has been added, run `select * from sys_role_permission where user_role_id='<user_role_id>' and permission_id='<permission_id>';`
 
 ***
 [Table of Contents](../README.md)
