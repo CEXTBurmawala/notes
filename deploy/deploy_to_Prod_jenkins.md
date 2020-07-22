@@ -39,7 +39,9 @@ See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b
 
 ### Yellowfin
 - Once an app is deployed to Prod, the yellowfin reporting should be setup.
-- Once done, redeploy the app with the yellowfin envars. 
+- Once done, redeploy the app with the yellowfin envars.
+- Log into the app > settings > user roles and edit & save the super user.
+
 
 ### Final prod push
 Once prod is finalized and ready to go to support and the customer starts using the app, the following steps need to be carried out:
