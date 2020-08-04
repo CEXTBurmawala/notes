@@ -28,12 +28,12 @@ make create-sample-users
 ```
 
 ### Usage Dashboard
-- Enable the usage dashboard. Copy a previous sql script and revise the year and month of deployment as well as the number of seats and capacity.
+- Enable the usage dashboard. Copy a previous sql script and revise the year and month of deployment as well as the number of seats and capacity. If deploying with current year and month, these two parameters can be omitted).
 
-USAGE_START_YEAR:0000 \
-USAGE_START_MONTH:00 \
-USAGE_SEAT_LIMIT:5 \
-USAGE_STORAGE_LIMIT:10
+USAGE_START_YEAR=0000 \
+USAGE_START_MONTH=00 \
+USAGE_SEAT_LIMIT=5 \
+USAGE_STORAGE_LIMIT=10
 
 See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b4331dff0ed84de35bb646a/script/generate/usage-rule.js) and [here](https://github.com/i-Sight/config_pro_base_v5/wiki/Populate-Usage-Rule) for documentation for usage rule.
 
@@ -46,6 +46,7 @@ See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b
 ### Final prod push
 Once prod is finalized and ready to go to support and the customer starts using the app, the following steps need to be carried out:
 - Remove the isight2 account in the database by running the following sql command: `UPDATE sys_user SET deleted_date=now(), sys_active=false WHERE nick='isight2';`
+- Then run this command to update the es index: `node node_modules/isight/script/es/reindex-data.js sys/user`
 - Update the isight account password to `C3xlabadmin!`
 
 
