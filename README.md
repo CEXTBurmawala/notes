@@ -40,6 +40,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Logging onto FTP](./ftp/logging_onto_ftp.md)
 
 ## Programming the App
+- [ACL case restriction](./programing_app/acl_case_restrictions.md)
 - [Add field](./programing_app/add_field.md)
 - [Add field to integration](./programing_app/add_field_integration.md)
 - [Add sub section](./programing_app/adding_sub_section.md)
