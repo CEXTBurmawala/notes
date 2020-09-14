@@ -58,6 +58,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Integration general](./programing_app/integration_general.md)
 - [Integration mapping](./programing_app/integration_mapping.md)
 - [Multiple integrations - 5.4](./programing_app/multiple_integration.md)
+- [Open Reports in separate window](./programing_app/reports_separate_window.md)
 - [Relative fields frontend](./programing_app/relative_fields_front.md)
 - [Relative fields backend](./programing_app/relative_fields_back.md)
 - [SSO Auto Redirect](./programing_app/sso_auto_redirect.md)
