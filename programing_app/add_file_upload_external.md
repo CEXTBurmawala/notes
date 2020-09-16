@@ -1,7 +1,7 @@
 ## Add File Upload on External Capture
 
 The following commit has the code changes that need to be added manually in order to add file upload on the external capture form:
-[HERE](https://github.com/i-Sight/config_ung_v5/commit/e192f1bd11bfc643d7d02f51588f336567ba54ee?ts=2). For the save external code, take the code from this file [HERE](https://github.com/i-Sight/config_centracare_v5/blob/3dce091a6d170d652999ad96f97af52ce2dcae7f/lib/services/business-logic/external-capture/workflow/external-capture-save.js)
+[HERE](https://github.com/i-Sight/config_ung_v5/commit/e192f1bd11bfc643d7d02f51588f336567ba54ee?ts=2). For the save external code, take the code from this file [HERE](https://github.com/i-Sight/config_centracare_v5/blob/3dce091a6d170d652999ad96f97af52ce2dcae7f/lib/services/business-logic/external-capture/workflow/external-capture-save.js?ts=2)
 
 
 #### Fix user role in database
