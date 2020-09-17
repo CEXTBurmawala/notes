@@ -53,6 +53,7 @@ This repository is intended to be a notebook for work-related notes.
 - [External 400 Error](./programing_app/external_400_error.md)
 - [External capture modal](./programing_app/external_capture_modal.md)
 - [External capture on/off](./programing_app/external_capture.md)
+- [External capture form title](./programing_app/external_form_title.md)
 - [External non-mandatory fields](./programing_app/external_non_mandatory.md)
 - [Fall 2019 patch vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 - [Integration general](./programing_app/integration_general.md)
