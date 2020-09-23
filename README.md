@@ -72,6 +72,7 @@ This repository is intended to be a notebook for work-related notes.
 ## Project Setup
 - [Change project](./project_setup/change_project.md)
 - [Product generator](./project_setup/product-generator.md)
+- [Sending emails locally](./project_setup/send_emails_locally.md)
 - [Setup new platform locally](./project_setup/setup_new_platform_locally.md)
 - [Setup new project](./project_setup/setup_new_project.md)
 - [Update versions](./project_setup/update_versions.md)
