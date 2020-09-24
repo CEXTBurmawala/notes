@@ -19,6 +19,10 @@
 - Once deploy is complete, navigate to the URL to ensure it is running.
 ***
 
+### SERVER_ENVARS
+Add the following envar to the deployment:
+`ALLOWED_REFERERS=<project_name>.i-sight.com`
+
 ### POSTRUN_SCRIPT - Initial
 ```
 export NODE_ENV=development

@@ -37,6 +37,10 @@ Somethings are different if redeploying to UAT.
 - In Jira, mark the ticket 'Ready for QA'
 ***
 
+### SERVER_ENVARS
+Add the following envar to the deployment:
+`ALLOWED_REFERERS=<project_name>.i-sightuat.com`
+
 ### POSTRUN_SCRIPT - Initial
 ```
 export NODE_ENV=development
