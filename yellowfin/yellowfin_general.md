@@ -171,6 +171,7 @@ knex('sys_translation')
   });
 
 ```
+- Add `"buffered-reader": "1.0.1",` to the package.json file and run `yarn`
 - Run the file with this command `node script/translate-yf.js <path_to_translation_file>.csv`
 - Then upload the file to yellowfin
 

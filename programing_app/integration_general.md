@@ -29,7 +29,7 @@ Notes regarding integration setup can be found here:
   - The entity should be either person or party
   - The hour of the day should be be between 1-23 (UTC time)
   - The interval should be either weekly or daily 
-- run `node script/ftp-integration/enable.js` to enable integration in the app
+- run `node script/ftp-integration/index.js enable -a` to enable integration in the app
   - if script fails, set the `export APP_CONFIG_PATH=$(pwd)`
 - log into the app and go to Settings > Workflows
   - in the dropdown menu, choose "Integration Mappings"
@@ -37,7 +37,7 @@ Notes regarding integration setup can be found here:
   - click on the edit button
   - choose a unique identifier in the list and click save
   - match all the person fields to the correct integration file header
-- run `node script/ftp-integration/import.js` to import the integration data into the app
+- run `node script/ftp-integration/index.js import -a` to import the integration data into the app
 
 ## Integration [4.x app]
 

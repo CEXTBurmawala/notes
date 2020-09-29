@@ -40,7 +40,7 @@ FTP_INTEGRATION_DAY_OF_WEEK=1
 #### [2] In the service box
 - run `docker ps` and copy the container_id of the `isight_server.1...`
 - run `docker exec -it <container_id> bash`
-- run `node script/ftp-integration/enable.js`
+- run `node script/ftp-integration/index.js enable -a`
 
 #### [3] In the app
 - Open another browser tab and navigate to the app
@@ -50,7 +50,7 @@ FTP_INTEGRATION_DAY_OF_WEEK=1
 
 #### [4] In the service box
 While still inside the docker container
-- run `node script/ftp-integration/import.js`
+- run `node script/ftp-integration/index import -a`
 
 #### [5] In the app
 - after integration scripts have been run, go back to the app and click on "profiles" and check
