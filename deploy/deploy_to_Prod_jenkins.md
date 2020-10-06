@@ -20,7 +20,8 @@
 ***
 
 ### SERVER_ENVARS
-Add the following envar to the deployment:
+Add the following envar to the deployment which will allow files to be previewed on screen:
+
 `ALLOWED_REFERERS=<project_name>.i-sight.com`
 
 ### POSTRUN_SCRIPT - Initial

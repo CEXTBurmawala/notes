@@ -25,6 +25,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Deploy to UAT - Nscale](./deploy/deploy_to_UAT_nscale.md)
 - [Integration setup - Jenkins](./deploy/integration_setup_jenkins.md)
 - [Integration setup - Nscale](./deploy/integration_setup_nscale.md)
+- [Server errors](./deploy/server_errors.md)
 - [Tmux](./deploy/tmux.md)
 - [Update app to 5.4](./deploy/update_to_54.md)
 - [Update app to 5.5](./deploy/update_to_55.md)
