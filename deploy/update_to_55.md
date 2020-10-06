@@ -34,7 +34,7 @@ make es-reindex-data
 make sync-queues
 ```
 
-#### 5.4 Release notes
+#### 5.5 Release notes
 Find release notes [here](https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/859209744/v5.5.0+-+Release+Notes)
 ***
 [Table of Contents](../README.md)
