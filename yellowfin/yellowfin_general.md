@@ -106,8 +106,15 @@ ORDER BY
 ``` 
 - In yellowfin, add a virtual table for each of the multi-value field.
 
-#### JSON fields
-***ASK HOW TO DETERMINE WHICH FIELDS TO DO THIS TO**
+#### Multi-value fields / ID fields
+Fields such as `investigative_team_members` is an array field that is also an array. It can be added to the array virtual table using the following sql statement:
+```
+SELECT
+	id,
+	context_yellowfin_username,
+	getusernamefromid(array_to_string(vw_sys_case.investigative_team_members,  ', ')) as investigative_team_members
+FROM vw_sys_case;
+```
 
 ### Export translations
 - In the app code base, add a file called `script/translate-yf.js` and paste the following code in it:
