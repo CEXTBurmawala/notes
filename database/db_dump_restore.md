@@ -46,7 +46,7 @@ To restore the data locally:
 If doing a data dumb locally where sample users created other users, there can be errors when inserting the users back into the database because the created by ID (foreign key) will not match the sample users created after the database reset.
 
 
-#### backup Database in Live App
+#### [Jenkins] Backup Database in Live App
 In order to backup the database of a live app, the database needs to be dumped and then restored after a setup.
 - In the db box in teleport, exec into the postgres container (`docker exec -ti <container_id> bash`)
 - Perform a `pg_dump > backup.sql` with the desired flags. The command will create a backup file inside the container
