@@ -3,6 +3,7 @@
 This repository is intended to be a notebook for work-related notes.
 
 ## Database
+- [Add column to database table](./database/add_column_to_table.md)
 - [Clear lockout](./database/clear_lockout.md)
 - [Database dump and restore](./database/db_dump_restore.md)
 - [Make commands](./database/make_commands.md)
@@ -19,10 +20,10 @@ This repository is intended to be a notebook for work-related notes.
 - [Bring App Back Up](./deploy/bring_app_back_up.md)
 - [Change mail host](./deploy/change_mail_host.md)
 - [Fix container restart failure - Nscale](./deploy/container_restart_failure.md)
-- [Deploy to Prod - Jenkins](./deploy/deploy_to_Prod_jenkins.md)
-- [Deploy to Prod - Nscale](./deploy/deploy_to_Prod_nscale.md)
-- [Deploy to UAT - Jenkins](./deploy/deploy_to_UAT_jenkins.md)
-- [Deploy to UAT - Nscale](./deploy/deploy_to_UAT_nscale.md)
+- [Deploy to Jenkins - UAT](./deploy/deploy_to_UAT_jenkins.md)
+- [Deploy to Jenkins - Prod](./deploy/deploy_to_Prod_jenkins.md)
+- [Deploy to Nscale - UAT](./deploy/deploy_to_UAT_nscale.md)
+- [Deploy to Nscale - Prod](./deploy/deploy_to_Prod_nscale.md)
 - [Integration setup - Jenkins](./deploy/integration_setup_jenkins.md)
 - [Integration setup - Nscale](./deploy/integration_setup_nscale.md)
 - [Server errors](./deploy/server_errors.md)
@@ -50,6 +51,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Change case numbering](./programing_app/change_case_numbering.md)
 - [Change cron schedule](./programing_app/change_cron_schedule.md)
 - [Change field type](./programing_app/change_field_type.md)
+- [download emails & attachments](./programing_app/download_emails.md)
 - [Extend platform file](./programing_app/extend_platform_file.md)
 - [External 400 Error](./programing_app/external_400_error.md)
 - [External capture modal](./programing_app/external_capture_modal.md)
