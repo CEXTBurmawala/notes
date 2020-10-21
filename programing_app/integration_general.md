@@ -39,6 +39,14 @@ Notes regarding integration setup can be found here:
   - match all the person fields to the correct integration file header
 - run `node script/ftp-integration/index.js import -a` to import the integration data into the app
 
+#### changing the delimiter
+If the delimiter in the csv file is not going to be a comma, the delimiter can be specific in the import script found in the file `lib/integration/ftp-integration.js`. The delimiter is specific in the csvParser variable.
+
+#### Files with BOM character
+If the files is encoded with a BOM character, the csv parser might have issues parsing the file. Therefore, the parameter `bom: true` can be added to the file `lib/integration/ftp-integration.js` in the csvParser variable.
+
+To determine if the files has a BOM character, run the following command: `file <file_name>`. Note that not all files with BOM need to have this parameter set to true.
+
 ## Integration [4.x app]
 
 #### Add integration code to app
