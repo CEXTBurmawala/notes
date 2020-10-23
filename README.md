@@ -30,6 +30,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Tmux](./deploy/tmux.md)
 - [Update app to 5.4](./deploy/update_to_54.md)
 - [Update app to 5.5](./deploy/update_to_55.md)
+- [Update usage rules](./deploy/update_usage_rules.md)
 
 ## Docker
 - [Docker compose](./docker/docker_compose.md)
