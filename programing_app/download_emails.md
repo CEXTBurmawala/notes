@@ -7,5 +7,7 @@ each thread, and zips all the content in a folder which the customer can downloa
 See [here](https://github.com/i-Sight/config_uhhospitals_v5/pull/53/files) for example code to add 
 this feature.
 
+See the email download updated code [here](https://github.com/i-Sight/config_uhhospitals_v5/blob/develop/lib/api/api-download-emails.js)
+
 ***
 [Table of Contents](../README.md)
