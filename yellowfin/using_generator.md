@@ -4,6 +4,7 @@
 
 - start building the yellowfin system based on the guide, following the steps until the 'views' section
 - once done:
+	- in the export process, move the `<customer_name> Master View` to the export list
 	- delete the master view from the Browse Views
 	- delete the data source from Admin console > data Sources
 
