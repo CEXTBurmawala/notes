@@ -84,7 +84,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Working with GitHub](./project_setup/working_with_github.md)
 
 ## Vim
-- [Vim Setup](./vim/vim_setup.md)
+- [Vim setup](./vim/vim_setup.md)
 
 ## Yellowfin
 - [Generator setup](./yellowfin/yellowfin_generator_setup.md)
