@@ -17,7 +17,7 @@ This repository is intended to be a notebook for work-related notes.
 ## Deploying
 - [Access Azure from home](./deploy/home_access_azure.md)
 - [Accessing Azure](./deploy/access_azure.md)
-- [Bring App Back Up](./deploy/bring_app_back_up.md)
+- [Bring app Back Up](./deploy/bring_app_back_up.md)
 - [Change mail host](./deploy/change_mail_host.md)
 - [Fix container restart failure - Nscale](./deploy/container_restart_failure.md)
 - [Deploy to Jenkins - UAT](./deploy/deploy_to_UAT_jenkins.md)
@@ -70,7 +70,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Relative fields backend](./programing_app/relative_fields_back.md)
 - [SSO Auto Redirect](./programing_app/sso_auto_redirect.md)
 - [SSO General](./programing_app/sso.md)
-- [Suggested Links](./programing_app/suggested_links.md)
+- [Suggested links](./programing_app/suggested_links.md)
 - [Tiered picklists - special](./programing_app/picklist_join.md)
 - [Yarn link explanation](./programing_app/yarn_link_explanation.md)
 
@@ -87,5 +87,5 @@ This repository is intended to be a notebook for work-related notes.
 - [Vim Setup](./vim/vim_setup.md)
 
 ## Yellowfin
-- [Using generator](./yellowfin/using_generator.md)
-- [Yellowfin general](./yellowfin/yellowfin_general.md)
+- [Generator setup](./yellowfin/yellowfin_generator_setup.md)
+- [Manual Setup](./yellowfin/yellowfin_manual_setup.md)

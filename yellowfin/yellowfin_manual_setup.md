@@ -185,6 +185,13 @@ knex('sys_translation')
 - Run the file with this command `node script/translate-yf.js <path_to_translation_file>.csv`
 - Then upload the file to yellowfin
 
+#### Publish the view
+enter the following information:
+- View Name: `<customer_name> Master View`
+- Description: `<customer_name> Master View`
+- Folder: `<customer_name> Reporting`
+- Sub-folder: `Views`
+
 #### Yellowfin variables in Jenkins
 The config envars are to be added once yellowfin is setup to both `COMPOSE_ENVARS` and `SERVER_ENVARS`
 
