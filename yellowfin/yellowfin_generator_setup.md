@@ -1,4 +1,4 @@
-## Using Yellowfin Generator
+## Using Yellowfin Generator Setup
 
 The following notes will enable you to generate the yellowfin configuration rather than manually creating the tables in yellowfin. The process involves starting a config, exporting it, running it through the generator along with the fieldspec, then importing it back into yellowfin.
 

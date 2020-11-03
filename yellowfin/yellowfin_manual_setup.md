@@ -1,4 +1,4 @@
-## Yellowfin General
+## Yellowfin Manual Setup
 
 Yellowfin can be setup once the application is deployed to production. Once yellowfin is setup, the  app can be re-deployed with the yellowfin envars.
 
