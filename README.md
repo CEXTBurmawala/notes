@@ -81,6 +81,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Sending emails locally](./project_setup/send_emails_locally.md)
 - [Setup new platform locally](./project_setup/setup_new_platform_locally.md)
 - [Setup new project](./project_setup/setup_new_project.md)
+- [Setup project - 2.x & 3.x](./project_setup/setup_project_2x3x.md)
 - [Update versions](./project_setup/update_versions.md)
 - [Working with GitHub](./project_setup/working_with_github.md)
 
