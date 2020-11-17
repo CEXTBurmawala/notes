@@ -111,7 +111,7 @@
 - IT will move over the folder with these dumps to the new Azure environment
 - Deploy the app,  run `make deploy` (confirm UAT/Prod)
 - Import the four dump files to re-setup the DBs `psql -h HOST -U USER -d DB < file_path/file_name.sql`
-- Log into the service box `make ssh ENV=prod` and run `make reindex-data`
+- Log into the service box `make ssh ENV=prod` and run `./container-run.sh reindex-data`
 
 
 ### Reference
