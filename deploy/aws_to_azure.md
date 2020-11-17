@@ -1,6 +1,6 @@
 ## AWS to Azure Migration
 
-#### Building the app in Azure
+#### Building the app
 - To log into bastion1, run `ssh -i ~/.ssh/azure <username>@cec-dmz-bastion1.eastus.cloudapp.azure.com`
 - To log into nscale, run `ssh cexadministrator@CEC-MGMT-NSCALE006`
   - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
@@ -98,6 +98,26 @@
 	- Make the file executable, run `chmod +x container-run.sh`
 - Run `make build ENV=prod`
 - When it's done building, run `make preview` to see if it looks good
+
+#### Deploying the app
+- Log into AWS NSCALE box, create a dump folder for the project on home (`mkdir project_dumps`)
+- PG_DUMP the isight(project_isight), audit(project_isightaudit), quartz(project_quartz), and filestore(project_filestore) DBs (All info can be found in Pleasant for the environments) `pg_dump -h HOST -U USER -d DB_NAME > FILE_NAME_isight.sql`
+- IT will move over the folder with these dumps to the new Azure environment
+- Setup new Environment on Azure using this article: <https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/23429130/V5+Deployment+Setup>
+	- v3.x apps and under will user config version 0.1, v4.x will use config version 1.0
+- Deploy new containers
+- Switch over ES and Redis folder paths:
+	- Navigate to `home/project_folder/lib`
+	- run `vim plugins.js`
+	- Edit following lines as follows:
+		- 97 -> esData: '/home/cexadministrator/data/elasticsearch',
+		- 98 -> esBackup: '/home/cexadministrator/data/elasticsearchbackup',
+		- 99 -> redisData: '/home/cexadministrator/data/redis'
+- Build new Environment
+- Deploy new containers
+- Run Import on the four PG_Dump files to re-setup the DBs
+	- psql -h HOST -U USER -d DB < file_path/file_name.sql
+- make reindex-data
 
 
 #### Reference
