@@ -6,8 +6,9 @@
   - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
 - Clone the nscale config master branch into the project folder `git clone git@github.com:i-Sight/nscale-config.git <project name>`
 - `cd <project name>` and run `make setup`
-- Create the file `sys-config.json` using a previous app as an example
+- Edit the file `sys-config.json` and compare to an old app
   - Edit 'sys-config.json' file with the proper name, namespace and id in the system object. The 'id' needs to be a unique id. Search online for UUID generator and use a newly generated id.
+	- change the quartz tag number to `v1.0.1`
   - Edit the server tag in the server object and update the path to the github repository. It helps to look at another app for comparison.
 	- The version number at the bottom depends on the app version (3.x and below use version 0.1, 4.x apps use 1.0)
 ```
@@ -85,6 +86,8 @@
 	```
 - Run `make validate ENV=prod`
 - Run `make link`
+- Run `nscale system list` now we should see the app at the end of the list
+- Run `make compile ENV=prod`
 - Copy these files from another project:
   - `cp -R ../<old_project_name>/workspace/config_<old_project_name>_v5/keys/ ./workspace/config_<project_name>_v5/keys`
   - `cp -R ../<old_project_name>/lib/plugins.js ./lib/`
@@ -94,8 +97,6 @@
 		- `/home/cexadministrator/data/elasticsearch`
 		- `/home/cexadministrator/data/elasticsearchbackup'`
 		- `/home/cexadministrator/data/redis'`
-- Run `nscale system list` now we should see the app at the end of the list
-- Run `make compile ENV=prod`
 - ssh into the service box `make ssh ENV=prod`
 	- Create the `server.env` file
 	- Copy the contents of another app into the file and edit the information based on the data in Pleasant under "Aws to Azure"
