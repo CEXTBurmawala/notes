@@ -6,7 +6,7 @@
   - The password can be found on pleasant under Root > IT > Azure > Azure East US > NSCALE > PROD/UAT
 - Clone the nscale config master branch into the project folder `git clone git@github.com:i-Sight/nscale-config.git <project name>`
 - `cd <project name>` and run `make setup`
-- Edit the file `sys-config.json`
+- Create the file `sys-config.json` using a previous app as an example
   - Edit 'sys-config.json' file with the proper name, namespace and id in the system object. The 'id' needs to be a unique id. Search online for UUID generator and use a newly generated id.
   - Edit the server tag in the server object and update the path to the github repository. It helps to look at another app for comparison.
 	- The version number at the bottom depends on the app version (3.x and below use version 0.1, 4.x apps use 1.0)
