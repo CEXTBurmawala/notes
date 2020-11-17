@@ -20,15 +20,16 @@ Once prod is finalized and ready to go to support and the customer starts using 
   - Paste in the two lines from Nnamdi's notes
 - Next, run `vim makefile` and change the 'ENV' field to 'Prod'
 - Run `make validate`
-- Run `nscacle system list`
 - Run `make link`
-- Run `nscacle system list` and now we should see the app at the end of the list
+- Run `nscale system list` now we should see the app at the end of the list
 - Run `make compile`
-- Copy the keys from another project in the `cp -R ../<old_project_name>/workspace/config_<old_project_name>_v5/keys/ ./workspace/config_<project_name>_v5/keys` 
-  - Create a temp directory (see Nnamdi's notes) and run the commands after changing the variables in the names. Run the first 3 first, then the second 3.
-  - Run `cd ../` and run `ls` to ee that the files were copied.
-  - Once done, delete the temp directory
-- Now edit the 'sever.env' file
+- Copy these files from another project:
+  - `cp -R ../<old_project_name>/workspace/config_<old_project_name>_v5/keys/ ./workspace/config_<project_name>_v5/keys`
+  - `cp -R ../<old_project_name>/lib/plugins.js ./lib/`
+  - `cp -R ../<old_project_name>/definitions/infrastructure.js ./definitions/`
+
+- ssh into the service box `make ssh ENV=prod`
+- Now create the 'sever.env' file
 - Run `df -h` to ensure there is enough space on nscale
 - Run `make build`
 - When it's done building, run `make preview` to see if it looks good
