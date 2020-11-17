@@ -9,6 +9,7 @@
 - Edit the file `sys-config.json`
   - Edit 'sys-config.json' file with the proper name, namespace and id in the system object. The 'id' needs to be a unique id. Search online for UUID generator and use a newly generated id.
   - Edit the server tag in the server object and update the path to the github repository. It helps to look at another app for comparison.
+	- The version number at the bottom depends on the app version (3.x and below use version 0.1, 4.x apps use 1.0)
 ```
 {
   "system": {
@@ -70,6 +71,7 @@
       }
     }
   },
+	"version": "0.1",
   "template": {
     "name": "azure"
   }
@@ -88,6 +90,10 @@
   - `cp -R ../<old_project_name>/lib/plugins.js ./lib/`
   - `cp -R ../<old_project_name>/definitions/infrastructure.js ./definitions/`
 	- in the `definitions/infrastructure.js` file, make sure that this flag is set to no under exports.redis: `redis-server --appendonly no`
+	- in the `lib/plugins.js` file, make sure that on lines 97, 98 and 99 have the updated paths:
+		- `/home/cexadministrator/data/elasticsearch`
+		- `/home/cexadministrator/data/elasticsearchbackup'`
+		- `/home/cexadministrator/data/redis'`
 - Run `nscale system list` now we should see the app at the end of the list
 - Run `make compile ENV=prod`
 - ssh into the service box `make ssh ENV=prod`
@@ -97,30 +103,20 @@
 	- Create the file `container-run.sh` and copy the contents from another app
 	- Make the file executable, run `chmod +x container-run.sh`
 - Run `make build ENV=prod`
-- When it's done building, run `make preview` to see if it looks good
+- When it's done building, run `make preview ENV=prod` to see if it looks good
 
 ### Deploying the app
-- Log into AWS NSCALE box, create a dump folder for the project on home (`mkdir project_dumps`)
-- PG_DUMP the isight(project_isight), audit(project_isightaudit), quartz(project_quartz), and filestore(project_filestore) DBs (All info can be found in Pleasant for the environments) `pg_dump -h HOST -U USER -d DB_NAME > FILE_NAME_isight.sql`
+- Log into AWS NSCALE box, create a dump folder for the project on home `mkdir project_dumps`
+- Dump the isight(project_isight), audit(project_isightaudit), quartz(project_quartz), and filestore(project_filestore) DBs (All info can be found in Pleasant for the environments) `pg_dump -h HOST -U USER -d DB_NAME > FILE_NAME_isight.sql`
 - IT will move over the folder with these dumps to the new Azure environment
-- Setup new Environment on Azure using this article: <https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/23429130/V5+Deployment+Setup>
-	- v3.x apps and under will user config version 0.1, v4.x will use config version 1.0
-- Deploy new containers
-- Switch over ES and Redis folder paths:
-	- Navigate to `home/project_folder/lib`
-	- run `vim plugins.js`
-	- Edit following lines as follows:
-		- 97 -> esData: '/home/cexadministrator/data/elasticsearch',
-		- 98 -> esBackup: '/home/cexadministrator/data/elasticsearchbackup',
-		- 99 -> redisData: '/home/cexadministrator/data/redis'
-- Build new Environment
-- Deploy new containers
-- Run Import on the four PG_Dump files to re-setup the DBs `psql -h HOST -U USER -d DB < file_path/file_name.sql`
-- make reindex-data
+- Deploy the app,  run `make deploy` (confirm UAT/Prod)
+- Import the four dump files to re-setup the DBs `psql -h HOST -U USER -d DB < file_path/file_name.sql`
+- Log into the service box `make ssh ENV=prod` and run `make reindex-data`
 
 
 ### Reference
 [Nnamdi's notes](https://github.com/CEXNIbe/ReadMe/wiki/Azure-NScale-Version-1-Setup)
+[Confluence deployment notes](https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/23429130/V5+Deployment+Setup)
 
 ***
 [Table of Contents](../README.md)
