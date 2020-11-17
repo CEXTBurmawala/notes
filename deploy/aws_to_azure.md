@@ -115,8 +115,7 @@
 		- 99 -> redisData: '/home/cexadministrator/data/redis'
 - Build new Environment
 - Deploy new containers
-- Run Import on the four PG_Dump files to re-setup the DBs
-	- `psql -h HOST -U USER -d DB < file_path/file_name.sql`
+- Run Import on the four PG_Dump files to re-setup the DBs `psql -h HOST -U USER -d DB < file_path/file_name.sql`
 - make reindex-data
 
 
