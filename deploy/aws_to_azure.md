@@ -115,8 +115,8 @@
 
 
 ### Reference
-[Nnamdi's notes](https://github.com/CEXNIbe/ReadMe/wiki/Azure-NScale-Version-1-Setup)
-[Confluence deployment notes](https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/23429130/V5+Deployment+Setup)
+- [Nnamdi's notes](https://github.com/CEXNIbe/ReadMe/wiki/Azure-NScale-Version-1-Setup)
+- [Confluence deployment notes](https://i-sight.atlassian.net/wiki/spaces/DKBV5/pages/23429130/V5+Deployment+Setup)
 
 ***
 [Table of Contents](../README.md)
