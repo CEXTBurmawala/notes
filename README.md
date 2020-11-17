@@ -17,6 +17,7 @@ This repository is intended to be a notebook for work-related notes.
 ## Deploying
 - [Access Azure from home](./deploy/home_access_azure.md)
 - [Accessing Azure](./deploy/access_azure.md)
+- [AWS to Azure migration](./deploy/aws_to_azure.md)
 - [Bring app Back Up](./deploy/bring_app_back_up.md)
 - [Change mail host](./deploy/change_mail_host.md)
 - [Fix container restart failure - Nscale](./deploy/container_restart_failure.md)
