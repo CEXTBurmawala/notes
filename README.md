@@ -84,6 +84,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Setup new project](./project_setup/setup_new_project.md)
 - [Setup project - 2.x & 3.x](./project_setup/setup_project_2x3x.md)
 - [Update versions](./project_setup/update_versions.md)
+- [Vagrant dev environment](./project_setup/vagrant.md)
 - [Working with GitHub](./project_setup/working_with_github.md)
 
 ## Vim

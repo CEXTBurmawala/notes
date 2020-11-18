@@ -87,7 +87,7 @@
 - Run `make validate ENV=prod`
 - Run `make link`
 - Run `nscale system list` now we should see the app at the end of the list
-- Run `make compile ENV=prod`
+- Run `make compile`
 - Copy these files from another project:
   - `cp -R ../<old_project_name>/workspace/config_<old_project_name>_v5/keys/ ./workspace/config_<project_name>_v5/keys`
   - `cp -R ../<old_project_name>/lib/plugins.js ./lib/`
@@ -103,16 +103,20 @@
 	- Also take a look at the server.env info in the sharepoint folder for SSO and fpt information for the app you're building
 	- Create the file `container-run.sh` and copy the contents from another app
 	- Make the file executable, run `chmod +x container-run.sh`
-- Run `make build ENV=prod`
+- Exit the service box and run `make build ENV=prod`
 - When it's done building, run `make preview ENV=prod` to see if it looks good
 
 ### Deploying the app
 - Log into AWS NSCALE box, create a dump folder for the project on home `mkdir project_dumps`
 - Dump the isight(project_isight), audit(project_isightaudit), quartz(project_quartz), and filestore(project_filestore) DBs (All info can be found in Pleasant for the environments) `pg_dump -h HOST -U USER -d DB_NAME > FILE_NAME_isight.sql`
 - IT will move over the folder with these dumps to the new Azure environment
-- Deploy the app,  run `make deploy` (confirm UAT/Prod)
 - Import the four dump files to re-setup the DBs `psql -h HOST -U USER -d DB < file_path/file_name.sql`
+- Deploy the app,  run `make deploy ENV=prod` (confirm UAT/Prod)
 - Log into the service box `make ssh ENV=prod` and run `./container-run.sh reindex-data`
+	- if the commands fails, exec into the server container, navigate to `node_modules/isight` and run the following commands:
+		- `make es-delete-index`
+		- `make es-create-index`
+		- `make es-reindex-data`
 
 
 ### Reference
