@@ -18,6 +18,8 @@ To build 2.x and 3.x apps locally, it may be easier to build them in vagrant. Fo
 - run `sudo apt-get install libcurl4-openssl-dev`
 - add the env vars to the `~/.bashrc` file
 
+Note: you may want to revise the amount of memory and cpu cores allocated in VirtualBox to this vagrant box in order to get better performance.
+
 - install docker
 	- run `sudo apt update`
 	- run `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
