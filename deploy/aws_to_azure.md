@@ -7,6 +7,7 @@
 - Clone the nscale config master branch into the project folder `git clone git@github.com:i-Sight/nscale-config.git <project name>`
 - `cd <project name>` and run `make setup`
 - Edit the file `sys-config.json` and compare to an old app
+	- make sure to create a tag in the app before deploying
   - Edit 'sys-config.json' file with the proper name, namespace and id in the system object. The 'id' needs to be a unique id. Search online for UUID generator and use a newly generated id.
 	- change the quartz tag number to `v1.0.1`
   - Edit the server tag in the server object and update the path to the github repository. It helps to look at another app for comparison.
