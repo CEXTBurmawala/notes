@@ -37,7 +37,6 @@ This repository is intended to be a notebook for work-related notes.
 - [Docker compose](./docker/docker_compose.md)
 - [Docker general](./docker/docker_general.md)
 - [Dockerize Node.js](./docker/dockerize_nodejs.md)
-- [Jade environment](./docker/jade_environment.md)
 - [Linking containers](./docker/network_containers.md)
 
 ## FTP
