@@ -32,8 +32,8 @@ The following notes will enable you to generate the yellowfin configuration rath
 - delete the data source from Admin console > data Sources
 
 #### [3] Generate to complete config
-- in a new console window, run the JADE environment
-- clone the project repo to the `~/workspace/<app_name>/`
+- in a new console window, navigate to `~/vagrant_box/yf_generator` and run `vagrant up` and `vagrant ssh`
+- clone the project repo
 - copy the fieldspec and the exported YF view into the top level folder of the repo
 - run the following command to generate the completed view:
 	- `product-generator yellowfin-export ./<app_name>.xlsx ./<app_name>.yfx ./<app_name>-complete.yfx`

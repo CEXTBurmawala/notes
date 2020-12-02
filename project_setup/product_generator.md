@@ -1,7 +1,7 @@
 ## Setup New Project
 
 ### Install generator on local machine
-- In your `~/git/` directory, create a directory called 'product-self-service'
+- In your `~/git/` directory, create a directory called 'generator'
 - navigate to <https://github.com/i-Sight/isight-self-service>
 - Clone the repo to 'generator'
 - navigate into the directory `cd generator`

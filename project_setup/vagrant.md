@@ -12,11 +12,11 @@ To build 2.x and 3.x apps locally, it may be easier to build them in vagrant. Fo
 - add `cd /vagrant` to the bottom of the `~/.bashrc` file
 - install nvm, run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 - run `source ~/.bashrc` and then `nvm install <node_version>`
-- create super user password, run `sudo passwd root` and choose a password
+- create super user password, run `sudo passwd root` and choose a password (123456)
 - install the correct npm version, run `npm install npm@<npm_version> -g`
 - run `sudo apt-get install build-essential`
 - run `sudo apt-get install libcurl4-openssl-dev`
-- add the env vars to the `~/.bashrc` file
+- add the isight specific envars to the `~/.bashrc` file
 
 Note: you may want to revise the amount of memory and cpu cores allocated in VirtualBox to this vagrant box in order to get better performance.
 
