@@ -71,6 +71,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Relative fields frontend](./programing_app/relative_fields_front.md)
 - [Relative fields backend](./programing_app/relative_fields_back.md)
 - [Remove case types from settings](./programing_app/remove_case_types.md)
+- [Remove close reason from close case modal](./programing_app/remove_close_reason.md)
 - [SSO Auto Redirect](./programing_app/sso_auto_redirect.md)
 - [SSO General](./programing_app/sso.md)
 - [Suggested links](./programing_app/suggested_links.md)
