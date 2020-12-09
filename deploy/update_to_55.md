@@ -2,7 +2,7 @@
 
 Follow one of the two options below to upgrade an app to 5.5.0.
 
-__Note:__ that the integration folder path has changed in the `docker-compose.yml` file. If the app is already deployed, attention may be required if the app uses the old folder path. The `docker-compose.yml` file may need to be edited to make the existing integration setup.
+__Note:__ that the integration folder path has changed in the `docker-compose.yml` file. If the app is already deployed, attention may be required if the app uses the old folder path. The `docker-compose.yml` file may need to be edited to make the existing integration setup work.
 
 
 #### [1] UAT + delete all data
