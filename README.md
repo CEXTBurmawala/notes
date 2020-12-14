@@ -46,6 +46,7 @@ This repository is intended to be a notebook for work-related notes.
 - [ACL case restriction](./programing_app/acl_case_restrictions.md)
 - [Add field](./programing_app/add_field.md)
 - [Add field to integration](./programing_app/add_field_integration.md)
+- [Add field to close/reopen modal](./programing_app/add_fields_to_close_modal.md)
 - [Add sub section](./programing_app/adding_sub_section.md)
 - [Add file upload on external](./programing_app/add_file_upload_external.md)
 - [Additional webform](./programing_app/additional_webform.md)
