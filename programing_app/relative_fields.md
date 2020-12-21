@@ -4,8 +4,9 @@ To make fields dynamically generated in both the frontend & the backend, the fie
 
 If the fields need to be dynamically set on the frontend as the user inputs data, the view also needs to have functions that set values based on other fields changing.
 
-
-[Example code](https://github.com/i-Sight/config_ubc_v5/pull/1)
+Examples:
+[UCRCC example code](https://github.com/i-Sight/config_ucrcc_v5/pull/33/commits/f91e6c3a627629f892e0f6b562bd8b06c4a8402e)
+[UBC example code](https://github.com/i-Sight/config_ubc_v5/pull/1)
 
 
 ***
