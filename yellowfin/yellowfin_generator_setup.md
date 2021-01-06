@@ -18,7 +18,7 @@ The following notes will enable you to generate the yellowfin configuration rath
 - go to Prepare section at the top left
 - at the bottom left, select the "+" button and click "Add / Edit Folders"
 - add a "Case" folder
-- drag the `case_number` from the left "Case" folder to the right "Case" folder
+- drag the `case_number` from the left "VW_SYS_CASE" folder to the right "Case" folder
 - Publish the view, enter the following information:
 	- View Name: `<customer_name> Master View`
 	- Description: `<customer_name> Master View`
@@ -28,6 +28,8 @@ The following notes will enable you to generate the yellowfin configuration rath
 #### [2] Export the config
 - after the view is published, go to the admin sidebar panel and click "Export"
 - in the export process, move the `<customer_name> Master View` to the export list
+- click on the blue "Export" button on the top left
+- name the export what the app name is on github and click "Export"
 - delete the master view from the Browse Views
 - delete the data source from Admin console > data Sources
 
@@ -40,7 +42,8 @@ The following notes will enable you to generate the yellowfin configuration rath
 
 #### [4] Import the config
 - log back into yellowfin
-- ensure that the master view and data source are deleted
+- delete the master view from the Browse Views
+- delete the data source from Admin console > data Sources
 - in the admin side panel, click on "Import"
 - upload the `<app_name>-complete.yfx` file and choose "custom" option
 - drag the "<app> Master View" and "<app> Prod" (database logo)
