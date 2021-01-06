@@ -1,6 +1,10 @@
 # notes
 
 This repository is intended to be a notebook for work-related notes.
+## CLI
+- [Disk usage](./CLI/disk_usage.md)
+- [Vagrant dev environment](./CLI/vagrant.md)
+- [Vim setup](./CLI/vim_setup.md)
 
 ## Database
 - [Add column to database table](./database/add_column_to_table.md)
@@ -88,11 +92,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Setup new project](./project_setup/setup_new_project.md)
 - [Setup project - 2.x & 3.x](./project_setup/setup_project_2x3x.md)
 - [Update versions](./project_setup/update_versions.md)
-- [Vagrant dev environment](./project_setup/vagrant.md)
 - [Working with GitHub](./project_setup/working_with_github.md)
-
-## Vim
-- [Vim setup](./vim/vim_setup.md)
 
 ## Yellowfin
 - [Generator setup](./yellowfin/yellowfin_generator_setup.md)
