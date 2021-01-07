@@ -47,6 +47,7 @@ The following notes will enable you to generate the yellowfin configuration rath
 - in the admin side panel, click on "Import"
 - upload the `<app_name>-complete.yfx` file and choose "custom" option
 - drag the "<app> Master View" and "<app> Prod" (database logo)
+- click on the blue "Import" button at the top left
 
 #### [5] Add filters
 - once imported, finish all the steps in the Yellowfin Setup Guide after the Views section.
