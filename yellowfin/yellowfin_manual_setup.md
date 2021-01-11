@@ -107,17 +107,8 @@ ORDER BY
 - In yellowfin, add a virtual table for each of the multi-value field.
 
 #### Multi-value fields / ID fields
-Fields such as `investigative_team_members` is an array field that is also an ID field. A separate virtual table needs to be created in order to include this field.
-
-- add a virtual table called "SYS_CASE_INVESTIGATIVE_TEAM_MEMBERS"
-- add the following SQL statement:
-
-```
-SELECT vw_sys_case.id, vw_sys_case.context_yellowfin_username, STRING_AGG(vw_sys_user.name, ', ') as investigative_team_members_string
-FROM     vw_sys_case
-JOIN     vw_sys_user ON vw_sys_user.id = ANY(vw_sys_case.investigative_team_members) AND vw_sys_user.context_yellowfin_username = vw_sys_case.context_yellowfin_username
-GROUP BY vw_sys_case.id,  vw_sys_case.context_yellowfin_username;
-```
+Fields such as `investigative_team_members`, add the following line to the top of the SYS_CASE_ARRAY virtual table:
+`getusernamefromid(array_to_string(vw_sys_case.investigative_team_members,  ', ')) as investigative_team_members,`
 
 ### Export translations
 - In the app code base, add a file called `script/translate-yf.js` and paste the following code in it:
