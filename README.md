@@ -69,7 +69,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Fall 2019 patch vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 - [Integration general](./programing_app/integration_general.md)
 - [Integration mapping](./programing_app/integration_mapping.md)
-- [Multiple integrations - 5.4](./programing_app/multiple_integration.md)
+- [Multiple integrations](./programing_app/multiple_integration.md)
 - [Multiple tiered picklists](./programing_app/multiple_tiered_picklists.md)
 - [Open Reports in separate window](./programing_app/reports_separate_window.md)
 - [Party fields dependent on case fields](./programing_app/party_fields_dependent_on_case_fields.md)
