@@ -14,7 +14,7 @@ To change the field type (not to/from picklist type), check to see what the data
 #### [3] change field name/caption
 To change a field name/caption, write a migration to rename the column name and caption.
 
-**If `make auto-migrate` is used, the columns will be renamed, but any data in the old named column will be deleted**
+**If `make auto-migrate` is used, the old column will be deleted, the new column will be created and any data in the old named column will be deleted**
 
 
 
