@@ -50,7 +50,7 @@ This repository is intended to be a notebook for work-related notes.
 
 ## Programming the App
 - [ACL case restriction](./programing_app/acl_case_restrictions.md)
-- [Add field](./programing_app/add_field.md)
+- [Add/update field](./programing_app/add_update_field.md)
 - [Add field to integration](./programing_app/add_field_integration.md)
 - [Add field to close/reopen modal](./programing_app/add_fields_to_close_modal.md)
 - [Add sub section](./programing_app/adding_sub_section.md)
@@ -59,7 +59,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Alow yes/no radio to be unselected](./programing_app/yes_no_null.md)
 - [Change case numbering](./programing_app/change_case_numbering.md)
 - [Change cron schedule](./programing_app/change_cron_schedule.md)
-- [Change field type](./programing_app/change_field_type.md)
+- [Change field type to picklist type](./programing_app/change_field_type_picklist.md)
 - [Custom webform save message](./programing_app/custom_message_webform_save.md)
 - [Download emails & attachments](./programing_app/download_emails.md)
 - [Extend platform file](./programing_app/extend_platform_file.md)

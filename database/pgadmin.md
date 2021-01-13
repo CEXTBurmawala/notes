@@ -15,6 +15,10 @@ You should now have access to the databases (filestore, isight, quartz, etc..)
 #### Working with the tables
 - to find the isight tables, click on the following arrows:
 	-	local_server > Databases > isight > Schemas > Tables
+- to find the isight views, click on the following arrows:
+	-	local_server > Databases > isight > Schemas > Views
+
+
 
 ***
 [Table of Contents](../README.md)

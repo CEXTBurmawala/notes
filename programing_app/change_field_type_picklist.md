@@ -1,4 +1,4 @@
-## Change Field Type
+## Change Field Type to Picklist Type
 
 In order to change a field type from a textarea or textbox to a picklist, follow the steps below.
 
