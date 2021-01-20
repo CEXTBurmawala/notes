@@ -53,7 +53,7 @@ See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b
 Once prod is finalized and ready to go to support and the customer starts using the app, the following steps need to be carried out:
 - Remove the isight2 account in the database by running the following sql command: `UPDATE sys_user SET deleted_date=now(), sys_active=false WHERE nick='isight2';`
 - Then run this command to update the es index: `node node_modules/isight/script/es/reindex-data.js sys/user`
-- Update the isight account password to `C3xlabadmin!`
+- Update the isight account password
 
 
 ***
