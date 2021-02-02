@@ -19,8 +19,7 @@ UPDATE sys_translation
 - the description and value fields are the caption
 
 #### Example
-
-https://github.com/i-Sight/config_cwcpcn_v5/pull/23/commits/888949c4e45e89f8a413aedb9d79299ca576f8af
+https://github.com/i-Sight/config_cwcpcn_v5/commit/888949c4e45e89f8a413aedb9d79299ca576f8af
 
 ***
 [Table of Contents](../README.md)
