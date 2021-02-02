@@ -18,5 +18,8 @@ Note:
 - the key is the field name in all lower case
 - the description and value fields are the caption
 
+Here is an example commit:
+https://github.com/i-Sight/config_cwcpcn_v5/pull/23/commits/888949c4e45e89f8a413aedb9d79299ca576f8af
+
 ***
 [Table of Contents](../README.md)
