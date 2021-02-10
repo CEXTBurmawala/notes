@@ -77,6 +77,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Open Reports in separate window](./programing_app/reports_separate_window.md)
 - [Party fields dependent on case fields](./programing_app/party_fields_dependent_on_case_fields.md)
 - [Picklist ranking](./programing_app/picklist_ranking.md)
+- [Read only webform duplicate](./programing_app/read_only_webform_duplicate.md)
 - [Relative fields front & back end](./programing_app/relative_fields.md)
 - [Remove case types from settings](./programing_app/remove_case_types.md)
 - [Remove close reason from close case modal](./programing_app/remove_close_reason.md)
