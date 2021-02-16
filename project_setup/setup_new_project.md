@@ -12,7 +12,7 @@
 - Ensure that the platform version is in the `~/git/_platform` directory (see package.json or platform.version file for platform version that the project is built on).
   - See **[this](./setup_new_platform_locally.md)** page for instruction on getting the correct platform version setup.
 - Create a directory for the customer in `~/git/config_<name>_v5` directory with the same name as the git repo.
-- clone the pro base from <https://github.com/i-Sight/config_pro_base_v5> to the new project directory.
+- clone the pro base to the new project directory `git clone git@github.com:i-Sight/config_pro_base_v5.git config_<>_v5`.
 - Once cloned, `cd` into the project directory and change the remote repository to point to the new repo created for the project by running `git remote set-url origin git@github.com:i-Sight/config_<name>_v5.git`. This sets the 'origin' to the new project repo.
 - Add the 'pro base' as 'base' in order to pull updates if required later on by running `git remote add base git@github.com:i-Sight/config_pro_base_v5.git`
 - Run `git remote -v` to double check that the 'origin' and 'base' are set right.
