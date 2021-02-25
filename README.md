@@ -72,6 +72,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Fall 2019 patch vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 - [Integration general](./programing_app/integration_general.md)
 - [Integration mapping](./programing_app/integration_mapping.md)
+- [List item not external](./programing_app/listitem_not_external.md)
 - [Multiple integrations](./programing_app/multiple_integration.md)
 - [Multiple tiered picklists](./programing_app/multiple_tiered_picklists.md)
 - [Open Reports in separate window](./programing_app/reports_separate_window.md)
