@@ -36,7 +36,7 @@ On page 10 of the guide, which walks through connecting the database, these are 
 
 #### ID virtual tables
 - In the database, a function called `getusernamefromid` needs to be created in order to connect IDs to names. Log into the data base and paste the following code to create the function in the database:
-```
+```sql
 CREATE OR REPLACE FUNCTION public.getusernamefromid(user_id text) 
 RETURNS text AS
   $BODY$Declare
@@ -53,7 +53,7 @@ OWNER TO postgres;
 ```
 
 - Once done, paste the following code that will return all the fields that needs to use the function in yellowfin:
-```
+```sql
 SELECT
   CONCAT('vw_',table_name) as table_name,
   column_name,
@@ -82,7 +82,7 @@ ORDER BY
 #### Multi-value fields
 - Log into the data base and paste the following code to return the multi-value fields:
 
-```
+```sql
 SELECT
   CONCAT('vw_',table_name) as table_name,
   column_name,
@@ -112,7 +112,7 @@ Fields such as `investigative_team_members`, add the following line to the top o
 
 ### Export translations
 - In the app code base, add a file called `script/translate-yf.js` and paste the following code in it:
-```
+```js
 /* eslint-disable no-console */
 const _ = require('lodash');
 const fs = require('fs');

@@ -6,7 +6,7 @@ Single sign-on configuration.
 A metadata file is to be created with the customer's isight url added to it. This file is then sent to the customer for their IT department to work with. There are metadata files for 4.x apps and 5.x apps.
 
 Here is the metadata for the 5.x apps:
-```
+```xml
 <?xml version="1.0"?>
 <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://<customer_name>.i-sightuat.com">
   <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">

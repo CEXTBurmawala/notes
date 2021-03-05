@@ -4,7 +4,7 @@ In order to change a field type from a textarea or textbox to a picklist, follow
 
 ### [1] Update case index.js
 In the file `entities/case/index.js` revise the picklist type:
-```
+```js
 {     
   field: '<field_name>',
   type: 'picklist',
@@ -18,7 +18,7 @@ In the file `entities/case/index.js` revise the picklist type:
 
 ### [2] Add picklist name to config
 In the file `config/options.picklists.js` add the new picklist name
-```
+```js
 '<picklist_name>': {
   text: 'value',
   value: 'value'
@@ -27,7 +27,7 @@ In the file `config/options.picklists.js` add the new picklist name
 
 ### [3] Add picklist values
 Add picklist data file: `data/lists/<picklist_name>.json`
-```
+```json
 [
   {
     "name": "<picklist_name>",
@@ -45,21 +45,21 @@ In the file `data/translations/en_US.js` add the translation for the picklist na
 In the project directory `script/database/migrations/`, add a migration in this format: `000.do.update-field-type.sql`
 
 In the migration script, add the following:
-```
+```sql
 ALTER TABLE sys_case
 ALTER COLUMN <column_name> TYPE character varying(255);
 ```
 
 ### [6] Add entry to sys_translation table
 In the project directory `script/database/migrations/`, add a migration in this format: `000.do.add-translation.sql`
-```
+```sql
 INSERT INTO sys_translation (...)
 VALUES (..);
 ```
 
 ### [7] Add entry to sys_listitem table
 In the project directory `script/database/migrations/`, add a migration in this format: `000.do.add-listitem.sql`
-```
+```sql
 INSERT INTO sys_listitem (...)
 VALUES (..);
 ```

@@ -7,7 +7,7 @@ In the platform directory (`~/git/platform/5.5.x` for example), run `npm install
 
 #### [2] Add envars
 In the terminal window that has the node server, add the following envars:
-```
+```shell
 export MAIL_TRANSPORT=false
 export MAILSRV_PORT=1025
 export MAIL_PORT=1025

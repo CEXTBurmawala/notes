@@ -6,7 +6,7 @@ If Rachel asks for a fields and field types dump from the database/app
 - Connect to the database box in nscale
 - Run the following command in the database:
 
-```
+```sql
 SELECT
 value AS "Field Name",
 '{' || SUBSTR(group_name, 5) || '.' || key || '}' AS "Template Value"
@@ -21,7 +21,7 @@ group_name,
 value;
 ```
 
-```
+```sql
 SELECT value AS "Field Name", '{' || SUBSTR(group_name, 5) || '.' || key || '}' AS "Template Value" FROM sys_translation WHERE group_name IN ('sys/case', 'sys/note', 'sys/party', 'sys/todo') AND subgroup_name = 'fields' ORDER BY group_name, value;
 ```
 

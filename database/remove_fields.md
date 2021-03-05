@@ -3,7 +3,7 @@ The command `make auto-migrate` will remove fields that are no longer in the ent
 
 #### Renamed fields
 If there are changes to the app where fields are renamed, the script `make auto-migrate` will add the renamed field as a new column in the `sys_case` table, and the old named field will be removed with a migration. Therefore, in order to rename a field, two sql queries need to be run:
-```
+```sql
 ALTER TABLE sys_case RENAME COLUMN <old_name> TO <new_name>;
 UPDATE sys_translation
 	SET description='<new_field_caption>',

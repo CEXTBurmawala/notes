@@ -14,7 +14,7 @@
 - Run `cat server.env` to check that the MAIL_HOST is still correct and up to date. Get the URL and go to the website and ensure that the login page loads.
 
 ### Script
-```
+```bash
 #!/usr/bin/env bash
 
 docker kill $(docker ps | grep 'server-' | awk '{print $1}') > /dev/null

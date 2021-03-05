@@ -2,7 +2,7 @@
 
 In order to allow saving an external capture form that has non mandatory fields that are mandatory in the system, add the following code to the `lib/services/business-logic/external-capture/workflow/external-capture-save.js` file.
 
-```
+```js
 const systemParty = await seneca.delegate({
   user$: { id: '0' },
   perm$: null,
@@ -12,7 +12,7 @@ const systemParty = await seneca.delegate({
 
 In order to not create a user if no fields are filled out, add the following:
 
-```
+```js
 const containsData = externalChildDoc.fields
 	.some(field => !_.isEmpty(result[field.external]));
 

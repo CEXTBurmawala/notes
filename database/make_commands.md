@@ -6,7 +6,7 @@ Short list with descriptions of common commands used when setting up or deployin
 `make auto-migrate` is a command in the pro base Makefile intended to facilitate migrating changes to the app when deploying a newer version of the app.
 
 These are the commands that are run:
-```
+```makefile
 auto-migrate:
 	$(MAKE) -C $(PLATFORM_PATH) backup
 	$(MAKE) -C $(PLATFORM_PATH) remove-views

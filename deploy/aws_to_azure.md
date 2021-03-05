@@ -12,7 +12,7 @@
 	- change the quartz tag number to `v1.0.1`
   - Edit the server tag in the server object and update the path to the github repository. It helps to look at another app for comparison.
 	- The version number at the bottom depends on the app version (3.x and below use version 0.1, 4.x apps use 1.0)
-```
+```json
 {
   "system": {
       "name": "<project_name>",

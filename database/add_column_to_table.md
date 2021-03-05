@@ -2,7 +2,7 @@
 
 Here is an example of adding a column to a table in the database:
 
-```
+```sql
 ALTER TABLE sys_todo_automation
 ADD COLUMN hr_area varchar(255);
 ```

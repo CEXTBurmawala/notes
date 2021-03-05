@@ -4,7 +4,7 @@
 - Start by installing Vim-Plug:
  - `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 - in the file `~/.vimrc` file, add the following:
-```
+```vim
 " Plugins placed between begin and end calls
 " Each plug is the user and repo name
 call plug#begin('~/.vim/plugged')

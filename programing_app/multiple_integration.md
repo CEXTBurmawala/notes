@@ -7,7 +7,7 @@ In the 5.5.x apps, the only file that needs to be edited is the `config/options.
 In order to add a second integration in a 5.4 app, most the files related to integration need to be duplicated and renamed to reflect what information they are integrating (for example, students and faculty). All the integrations will be merged into the person entity.
 
 The FTP envars need to be updated to be specific to the integration, for example:
-```
+```shell
 FACULTY_FTP_INTEGRATION_FOLDER_PATH=/usr/local/data/integration/faculty
 FACULTY_FTP_INTEGRATION_ENTITY=person
 FACULTY_FTP_INTEGRATION_HOUR_OF_DAY=17

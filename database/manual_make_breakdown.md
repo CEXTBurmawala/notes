@@ -3,7 +3,7 @@
 Follow the steps outlined here to manually perform `make breakdown`.
 
 The following databases need to be deleted:
-```
+```makefile
   $(MAKE) db-delete $(DB_ENV)
   $(MAKE) db-delete $(AUDIT_DB_ENV)
   $(MAKE) db-delete $(FILESTORE_DB_ENV)

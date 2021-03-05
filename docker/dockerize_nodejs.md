@@ -17,7 +17,7 @@ Once the dockerfile is created, the image needs to be built and then a container
 - To launch the container, run `docker run -d --name <container_name> -p <port>:<port> <image_name>`
 
 ### Sample dockerfile:
-```
+```docker
 FROM node:10-alpine
 RUN mkdir -p /src/app
 WORKDIR /src/app
