@@ -85,6 +85,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Remove case types from settings](./programing_app/remove_case_types.md)
 - [Remove close reason from close case modal](./programing_app/remove_close_reason.md)
 - [Show/Hide additional parties on webform](./programing_app/show_hide_webform_parties.md)
+- [Sort picklist descending](./programing_app/sort_picklist_descending.md)
 - [SSO Auto Redirect](./programing_app/sso_auto_redirect.md)
 - [SSO General](./programing_app/sso.md)
 - [Suggested links](./programing_app/suggested_links.md)
