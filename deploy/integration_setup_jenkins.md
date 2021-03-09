@@ -5,6 +5,7 @@ Integration allows the customer to integrate information (profiles) into their a
 NOTE: The app needs to be deployed before the integration can be setup.
 
 Link to [Integration General](../programing_app/integration_general.md)
+
 LInk to [Pro Base notes](https://github.com/i-Sight/config_pro_base_v5/blob/v5.5.x/docs/Integration.md)
 
 #### In Jenkins
