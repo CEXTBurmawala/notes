@@ -16,6 +16,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Migrations general](./database/migrations_general.md)
 - [Migrations picklists](./database/migrations_picklists.md)
 - [pgAdmin](./database/pgadmin.md)
+- [Quartz](./database/quartz.md)
 - [remove/rename fields](./database/remove_fields.md)
 - [Reset password](./database/reset_password.md)
 - [Run SQL file from psql](./database/run_sql.md)
