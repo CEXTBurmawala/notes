@@ -4,7 +4,7 @@ To build 2.x and 3.x apps locally, it may be easier to build them in vagrant. Fo
 
 ### General environment setup
 - create folder at `~/vagrant_box/app-<version>`
-- create folders inside app folder called `docker-app` and `platform`
+- create a folder inside app folder called `platform`
 - copy Vagrantfile into app folder
 - cd into app directory and run `vagrant up`
 - run `vagrant ssh`
@@ -14,6 +14,9 @@ To build 2.x and 3.x apps locally, it may be easier to build them in vagrant. Fo
 - run `source ~/.bashrc` and then `nvm install <node_version>`
 - create super user password, run `sudo passwd root` and choose a password (123456)
 - install the correct npm version, run `npm install npm@<npm_version> -g`
+- install yarn if needed, run `npm install --global yarn`
+- run `sudo apt-get update`
+- run `sudo apt-get upgrade`
 - run `sudo apt-get install build-essential`
 - run `sudo apt-get install libcurl4-openssl-dev`
 - add the isight specific envars to the `~/.bashrc` file
@@ -49,9 +52,9 @@ Note: you may want to revise the amount of memory and cpu cores allocated in Vir
 
 
 ### Git setup
-- create the file `./.gitconfig` and copy the user info from your computer
+- create the file `~/.gitconfig` and copy the user info from your computer
 - cd into `~/.ssh`
-- run eval `ssh-agent -s`
+- run `eval ssh-agent -s`
 - run `ssh-keygen -t rsa -C flavoie@i-sight.com`
 - run `cat ~/.ssh/id_rsa.pub` and copy the output
 - on github.com under settings, add the ssh key
@@ -65,18 +68,20 @@ Note: you may want to revise the amount of memory and cpu cores allocated in Vir
 	- run `npm link`
 
 - clone the platform (for docker) `git clone git@github.com:i-Sight/isight_main_v5_beta.git docker-app`
-	- cd into docker-app and run `git co v4.2.7`
-	- run `nvm install 6.11.5`
-	- run `npm install`
+	- cd into docker-app and run `git co vx.x.x`
+	- run `nvm install 6.11.5` (check the platform for correct node version to install)
+	- run `npm install` or `yarn install`
 	- run `sudo service postgresql status`, if it's active, run `sudo service postgresql stop`
 	- run `make docker-up`
 	- run `docker ps` to confirm all containers are up
 
 - clone the app `git clone <app_ssh_url> <app_name>`
 	- cd into the app directory and checkout the master branch
-	- run `npm link isight`
-	- run `make install`
+	- run `npm link isight` or `yarn link isight`
+	- run `npm install` or `yarn install`
+	- run `make breakdown && make setup && make create-sample-users`
 	- run `node server` to startup the app
+	- open another terminal window and ssh into vagrant, navigate to the app directory and run `make watch`
 	- go to your browser and enter `localhost:8000` in the address bar
 
 
