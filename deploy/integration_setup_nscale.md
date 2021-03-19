@@ -18,10 +18,8 @@ Integration allows the customer to integrate information (profiles) into their a
   - `INTEGRATION_LOCAL_PATH=/usr/local/data/integration`
 - Run `crontab -e` to add a cron job to the app (select editor of choice).
   - Add the following at the bottom: `<crontab_schedule> /home/cexadministrator/container-run.sh node script/import-integration-parties/index.js > /dev/null`
-
-  ** cron job quick reference -> <https://www.adminschoice.com/crontab-quick-reference>
-
-  ** to figure out crontab schedule -> <https://crontab.guru>
+  - ** cron job quick reference -> <https://www.adminschoice.com/crontab-quick-reference>
+  - ** to figure out crontab schedule -> <https://crontab.guru>
 
 - edit `container-run.sh` to mount the volume:
   - add `-v /home/cexadministrator/integration:/usr/local/data/integration` to the `docker run` command

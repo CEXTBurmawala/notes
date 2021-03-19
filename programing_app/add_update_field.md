@@ -9,7 +9,7 @@ The script `make auto-migrate` takes care of adding fields (as long as they are 
 #### [2] change field type
 To change the field type (not to/from picklist type), check to see what the data type is in the database
 - if they are both the same data type, running `make sync-data-dictionary` will take care of the change
-- if they are different, a migration will need to be written. See step 5 of [THESE](./change_field_type.md) notes
+- if they are different, a migration will need to be written. See [THIS](https://github.com/i-Sight/config_tamu_v5/blob/develop/script/database/migrations/002.do.make-first-name-searchtexbox.sql) commit for an example
 
 #### [3] change field name/caption
 To change a field name/caption, write a migration to rename the column name and caption.

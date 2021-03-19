@@ -53,14 +53,15 @@ To determine if the files has a BOM character, run the following command: `file 
 - in `script/import-integration-parties/data-mapping.js`, add all the sample file fields and map them to the party fields. At the top of the file, a database table needs to be set as the integration table so that the app can populate the database table with the integration file rows.
 - run the script `node script/import-integration-parties/generate-entity-files.js` in order to create
 the entity for the new table.
-- log into psql and check that the table was created.
 - run a dev setup, run `make breakdown && make setup && make create-sample-users`
 - run `pg_dump -h localhost -U postgres -d isight -t sys_employee --schema-only` in order to get the sql command in order to create a migration script that will be run in UAT/Prod.
-  - ensure to choose the primary key in the script
 - add any missing translations needed to the `en_US.js` file
 - search for 'entityType' in the code and remove them
+- commit the changes and checkout the previous branch and do a dev setup
+- restore the pg_dump in the data base
+- run the import script `node script/import-integration-parties/index.js`
 
-#### Testing integration locally
+#### Testing integration
 - set environment variables to run the integration locally:
   - `export INTEGRATION_LOCAL_IMPORT=true`
   - `export INTEGRATION_LOCAL_PATH=<path_to_sample_file>`
@@ -71,6 +72,11 @@ into the app.
 - make changes to the mapping file
 - delete all 'employee' related files
 - re-run `node script/import-integration-parties/generate-entity-files.js`
+
+
+#### References
+See the following PRs for the changes that were implemented to add integration:
+- https://github.com/i-Sight/config_tamu_v5/pull/18/files?ts=2
 
 
 ***
