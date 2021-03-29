@@ -55,6 +55,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Add/update field](./programing_app/add_update_field.md)
 - [Add field to integration](./programing_app/add_field_integration.md)
 - [Add field to close/reopen modal](./programing_app/add_fields_to_close_modal.md)
+- [Add party search](./programing_app/add_party_search.md)
 - [Add sections](./programing_app/add_sections.md)
 - [Add sub section](./programing_app/adding_sub_section.md)
 - [Add file upload on external](./programing_app/add_file_upload_external.md)
