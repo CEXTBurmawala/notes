@@ -34,12 +34,12 @@ make create-sample-users
 
 ### Usage Dashboard
 - Enable the usage dashboard. Copy a previous sql script and revise the year and month of deployment as well as the number of seats and capacity. If deploying with current year and month, these two parameters can be omitted).
-
-USAGE_START_YEAR=0000 \
-USAGE_START_MONTH=00 \
-USAGE_SEAT_LIMIT=5 \
+```
+USAGE_START_YEAR=0000
+USAGE_START_MONTH=00
+USAGE_SEAT_LIMIT=5
 USAGE_STORAGE_LIMIT=10
-
+```
 See [here](https://github.com/i-Sight/config_pro_base_v5/blob/4766c852c012c6dc7b4331dff0ed84de35bb646a/script/generate/usage-rule.js) and [here](https://github.com/i-Sight/config_pro_base_v5/wiki/Populate-Usage-Rule) for documentation for usage rule.
 
 ### Yellowfin
