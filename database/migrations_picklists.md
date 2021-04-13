@@ -6,5 +6,8 @@ note: new values will be added by the `make auto-migrate` script, including pick
 
 See [Uhhospitals](https://github.com/i-Sight/config_uhhospitals_v5/commit/7c47449702c1d3eae96047c15c8408159cb04a4b) for example migration scripts for picklists.
 
+#### Migration for picklist to picklist[]
+See jjay_cuny [migration 1](https://github.com/i-Sight/config_jjay_cuny_v5/blob/develop/script/database/migrations/003.do.update-fields-to-multi-picklists.sql) & [migration 2](https://github.com/i-Sight/config_jjay_cuny_v5/blob/develop/script/database/migrations/005.do.update-multi-picklists.sql) for the migrations to change a field from a picklist field to a multi picklist field.
+
 ***
 [Table of Contents](../README.md)
