@@ -7,6 +7,9 @@ For the save external code, take the code from this file [HERE](https://github.c
 
 
 #### Fix user role in database
+The easiest way to accomplish this is by writing a migration. [HERE](https://github.com/i-Sight/config_houston_spca_v5/blob/develop/script/database/migrations/001.do.user-role-for-external-file-upload.sql) is an example of the migration that should be added.
+
+#### Alternative - Fix user role in database
 If the app is already deployed and cannot be broken down, the following changes need to be made in the database which will add file upload as a user role for the anonymous user which will allow file uploads on external.
 
 [1] Get the permission id from the sys_permissions table `select * from sys_permission where code='upload_file';`
