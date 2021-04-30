@@ -39,6 +39,10 @@ Notes regarding integration setup can be found here:
   - match all the person fields to the correct integration file header
 - run `node script/ftp-integration/index.js import -a` to import the integration data into the app
 
+#### Multi picklists values
+If some of the fields map to a multi-picklist (`picklist[]`) field, add the following code to the ` lib/integration/ftp-integration.js`
+https://github.com/i-Sight/config_mnsu_v5/commit/bed36ec59282fe6f114b543183ea75bccf92e3a2
+
 #### Changing the delimiter
 If the delimiter in the csv file is not going to be a comma, the delimiter can be specific in the import script found in the file `lib/integration/ftp-integration.js`. The delimiter is specific in the csvParser variable.
 
