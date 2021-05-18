@@ -53,6 +53,7 @@ This repository is intended to be a notebook for work-related notes.
 
 ## Programming the App
 - [ACL case restriction](./programing_app/acl_case_restrictions.md)
+- [Add customized HTML](./programing_app/add_customized_html.md)
 - [Add/update field](./programing_app/add_update_field.md)
 - [Add field to integration](./programing_app/add_field_integration.md)
 - [Add field to close/reopen modal](./programing_app/add_fields_to_close_modal.md)
