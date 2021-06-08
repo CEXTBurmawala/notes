@@ -10,6 +10,7 @@
 - Run `git branch` to ensure correct branch.
 - Run `git submodule update --init --recursive`
 - Run `yarn --update-checksums` to install all dependencies.
+- Run `nvm use` to use the node version required for the platform that you are using.
 
 ***
 [Table of Contents](../README.md)
