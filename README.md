@@ -77,6 +77,7 @@ This repository is intended to be a notebook for work-related notes.
 - [External capture on/off](./programing_app/external_capture.md)
 - [External capture form title](./programing_app/external_form_title.md)
 - [External non-mandatory fields](./programing_app/external_non_mandatory.md)
+- [External save message](./programing_app/external_save_message.md)
 - [Fall 2019 patch vulnerability](./programing_app/fall_2019_patch_vulnerability.md)
 - [Integration general](./programing_app/integration_general.md)
 - [Integration mapping](./programing_app/integration_mapping.md)
