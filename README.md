@@ -65,6 +65,7 @@ This repository is intended to be a notebook for work-related notes.
 - [Additional webform](./programing_app/additional_webform.md)
 - [Alow yes/no radio to be unselected](./programing_app/yes_no_null.md)
 - [Automated email notification](./programing_app/auto_email_response.md)
+- [Business days computed function](./programing_app/business_day_compute_function.md)
 - [Change case numbering](./programing_app/change_case_numbering.md)
 - [Change cron schedule](./programing_app/change_cron_schedule.md)
 - [Change field type to picklist type](./programing_app/change_field_type_picklist.md)
